@@ -333,14 +333,14 @@ section#about .aboutDescription__title {
 
 section#about .aboutDescription__subtitle {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 125%;
   color: #3db5e7;
 }
 
 section#about .aboutDescription__text {
   font-weight: normal;
-  font-size: .9em;
+  font-size: 1.1em;
   line-height: 125%;
   color: #273947;
 }
