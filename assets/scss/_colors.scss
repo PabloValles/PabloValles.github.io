@@ -1,0 +1,36 @@
+/**======================  COLORS  ======================*/
+
+$gradient_principal: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+$gradient_secundary: linear-gradient(270deg, #11cdd7 0%, #3db5e7 100%);
+$color_light: #f2f3f9;
+$color_dark: #273947;
+$color_gray: #728fa3;
+$color_blue: #3db5e7;
+$color_aqua: #11cdd6;
+$color_green: #5cd611;
+
+/** Backgrounds */
+
+.bg_color_light {
+    background-color: #f2f3f9;
+}
+
+.bg_color_dark {
+    background-color: #273947;
+}
+
+.bg_color_gray {
+    background-color: #728fa3;
+}
+
+.bg_color_blue {
+    background-color: #3db5e7;
+}
+
+.bg_color_aqua {
+    background-color: #11cdd6;
+}
+
+.bg_color_green {
+    background-color: #5cd611;
+}
