@@ -19,6 +19,13 @@ section#header {
         span {
             font-family: "Montserrat", sans-serif;
         }
+        .navbar {
+            .navbar-toggler {
+                &:focus {
+                    outline: none !important;
+                }
+            }
+        }
     }
     #navbar_mini {
         padding: 0 18px;

@@ -52,6 +52,10 @@ section#header #contact_bar span {
   font-family: "Montserrat", sans-serif;
 }
 
+section#header #contact_bar .navbar .navbar-toggler:focus {
+  outline: none !important;
+}
+
 section#header #navbar_mini {
   padding: 0 18px;
 }
