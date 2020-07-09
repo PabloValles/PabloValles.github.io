@@ -314,6 +314,7 @@ section#about .titlePag__number {
 section#about .aboutDescription {
   width: 100%;
   position: relative;
+  margin-top: 1.7em;
 }
 
 section#about .aboutDescription__title, section#about .aboutDescription__subtitle, section#about .aboutDescription__text {
@@ -323,7 +324,7 @@ section#about .aboutDescription__title, section#about .aboutDescription__subtitl
 
 section#about .aboutDescription__title {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.1em;
   line-height: 104.4%;
   /* or 52px */
   letter-spacing: -0.01em;
@@ -333,15 +334,15 @@ section#about .aboutDescription__title {
 
 section#about .aboutDescription__subtitle {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 125%;
   color: #3db5e7;
 }
 
 section#about .aboutDescription__text {
   font-weight: normal;
-  font-size: 1.1em;
-  line-height: 125%;
+  font-size: 1.3em;
+  line-height: 115%;
   color: #273947;
 }
 
