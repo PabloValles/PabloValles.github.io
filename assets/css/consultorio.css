@@ -365,6 +365,31 @@ section#about .cardServices__card {
   border-radius: 20px;
   border: none;
   text-align: center;
+  margin: 10px 0;
+}
+
+section#about .cardServices__card:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  -webkit-box-shadow: 0px 8px 30px rgba(64, 184, 231, 0.7);
+          box-shadow: 0px 8px 30px rgba(64, 184, 231, 0.7);
+}
+
+section#about .cardServices__card:hover .cardServices__title {
+  color: #fff;
+}
+
+section#about .cardServices__card:hover .cardServices__text {
+  color: #fff;
+}
+
+section#about .cardServices__card:hover .cardServices__icon path {
+  stroke: #fff;
+}
+
+section#about .cardServices__icon svg {
+  width: 80px;
+  height: 82px;
 }
 
 section#about .cardServices__icon img {
