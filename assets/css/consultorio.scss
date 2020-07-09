@@ -341,3 +341,119 @@ section#about {
         }
     }
 }
+
+section#especialidades {
+    .especialidadesContent {
+        .especialidadesTitle {
+            position: relative;
+            &__title {
+                position: relative;
+                z-index: 1;
+                font-family: "Raleway", sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-left: 2em;
+                color: $color_gray;
+            }
+            &__number {
+                position: absolute;
+                top: -40px;
+                left: 0;
+                font-family: Montserrat, sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 120px;
+                letter-spacing: -0.045em;
+                color: #fff;
+                text-shadow: 0px 4px 45px rgba(208, 210, 218, 0.65);
+                z-index: 0;
+            }
+        }
+        &__superTitle {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            //font-size: 3em;
+            font-size: 2.3em;
+            line-height: 104.4%;
+            /* or 52px */
+            text-align: center;
+            letter-spacing: -0.01em;
+            /* dark */
+            color: $color_dark;
+        }
+        &__subtitle {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2em;
+            line-height: 125%;
+            text-align: center;
+            color: $color_blue;
+        }
+        &__turnos {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1em;
+            line-height: 104.4%;
+            letter-spacing: -0.01em;
+            color: $color_gray;
+        }
+    }
+    .especialidadesTabs {
+        &__item {
+            a {
+                font-family: 'Raleway', sans-serif;
+                color: $color_gray !important;
+                &.active {
+                    background: $gradient_principal !important;
+                    color: #fff !important;
+                }
+            }
+        }
+        &__content {
+            position: relative;
+            background-color: #fff;
+            border-radius: 1em;
+            z-index: 1;
+            &:before {
+                content: "";
+                z-index: 0;
+                position: absolute;
+                background: $gradient_principal;
+                left: 0;
+                top: 0;
+                width: 40%;
+                height: 100%;
+                border-radius: 1em;
+            }
+        }
+        &__detail {
+            position: relative;
+            z-index: 999;
+            .card {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
+                border-radius: 35px;
+                width: 100%;
+                .detail_title {
+                    font-family: 'Raleway', sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    line-height: 125%;
+                    color: $color_blue !important;
+                }
+                .detail_text {
+                    font-family: 'Raleway', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 1em;
+                    line-height: 125%;
+                }
+            }
+        }
+    }
+}

@@ -416,4 +416,127 @@ section#about .cardServices__text {
   line-height: 125%;
   color: #728fa3;
 }
+
+section#especialidades .especialidadesContent .especialidadesTitle {
+  position: relative;
+}
+
+section#especialidades .especialidadesContent .especialidadesTitle__title {
+  position: relative;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 2em;
+  color: #728fa3;
+}
+
+section#especialidades .especialidadesContent .especialidadesTitle__number {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 120px;
+  letter-spacing: -0.045em;
+  color: #fff;
+  text-shadow: 0px 4px 45px rgba(208, 210, 218, 0.65);
+  z-index: 0;
+}
+
+section#especialidades .especialidadesContent__superTitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.3em;
+  line-height: 104.4%;
+  /* or 52px */
+  text-align: center;
+  letter-spacing: -0.01em;
+  /* dark */
+  color: #273947;
+}
+
+section#especialidades .especialidadesContent__subtitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 125%;
+  text-align: center;
+  color: #3db5e7;
+}
+
+section#especialidades .especialidadesContent__turnos {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 104.4%;
+  letter-spacing: -0.01em;
+  color: #728fa3;
+}
+
+section#especialidades .especialidadesTabs__item a {
+  font-family: 'Raleway', sans-serif;
+  color: #728fa3 !important;
+}
+
+section#especialidades .especialidadesTabs__item a.active {
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7)) !important;
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%) !important;
+  color: #fff !important;
+}
+
+section#especialidades .especialidadesTabs__content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1em;
+  z-index: 1;
+}
+
+section#especialidades .especialidadesTabs__content:before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+section#especialidades .especialidadesTabs__detail {
+  position: relative;
+  z-index: 999;
+}
+
+section#especialidades .especialidadesTabs__detail .card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
+          box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
+  border-radius: 35px;
+  width: 100%;
+}
+
+section#especialidades .especialidadesTabs__detail .card .detail_title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 125%;
+  color: #3db5e7 !important;
+}
+
+section#especialidades .especialidadesTabs__detail .card .detail_text {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 125%;
+}
 /*# sourceMappingURL=consultorio.css.map */
