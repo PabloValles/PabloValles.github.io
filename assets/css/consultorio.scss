@@ -8,12 +8,12 @@ body {
 }
 
 section {
-    height: 100vh !important;
     overflow: hidden;
     position: relative;
 }
 
 section#header {
+    height: 100vh !important;
     background: $gradient_principal;
     #contact_bar {
         span {
@@ -219,6 +219,104 @@ section#header {
                     height: 566px;
                 }
             }
+        }
+    }
+}
+
+section#about {
+    height: 100%;
+    .titlePag {
+        position: relative;
+        margin-top: 1em;
+        &__title {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        &__number {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            font-family: Montserrat, sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 120px;
+            letter-spacing: -0.045em;
+            color: rgba(114, 143, 163, 0.1);
+        }
+    }
+    .aboutDescription {
+        width: 100%;
+        position: relative;
+        &__title,
+        &__subtitle,
+        &__text {
+            font-family: Raleway, sans-serif;
+            font-style: normal;
+        }
+        &__title {
+            font-weight: bold;
+            font-size: 2em;
+            line-height: 104.4%;
+            /* or 52px */
+            letter-spacing: -0.01em;
+            /* dark */
+            color: $color_dark;
+        }
+        &__subtitle {
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 125%;
+            color: $color_blue;
+        }
+        &__text {
+            font-weight: normal;
+            font-size: .9em;
+            line-height: 125%;
+            color: $color_dark;
+        }
+        &__button {
+            width: 152px;
+            height: 48px;
+            background: $gradient_principal;
+            color: $color_light;
+            box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+            border-radius: 50px;
+        }
+    }
+    .cardServices {
+        position: relative;
+        &__card {
+            background: $color_light;
+            border-radius: 20px;
+            border: none;
+            text-align: center;
+        }
+        &__icon {
+            img {
+                // width: 90px;
+                // height: 92px;
+                width: 80px;
+                height: 82px;
+            }
+        }
+        &__title {
+            font-family: Montserrat, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: $color_blue;
+        }
+        &__text {
+            font-family: Raleway, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 125%;
+            color: $color_gray;
         }
     }
 }

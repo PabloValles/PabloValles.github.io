@@ -38,12 +38,12 @@ body {
 }
 
 section {
-  height: 100vh !important;
   overflow: hidden;
   position: relative;
 }
 
 section#header {
+  height: 100vh !important;
   background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
   background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
 }
@@ -281,5 +281,113 @@ section#header div#formas #blur_elipse img {
     width: 733.86px;
     height: 566px;
   }
+}
+
+section#about {
+  height: 100%;
+}
+
+section#about .titlePag {
+  position: relative;
+  margin-top: 1em;
+}
+
+section#about .titlePag__title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+section#about .titlePag__number {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 120px;
+  letter-spacing: -0.045em;
+  color: rgba(114, 143, 163, 0.1);
+}
+
+section#about .aboutDescription {
+  width: 100%;
+  position: relative;
+}
+
+section#about .aboutDescription__title, section#about .aboutDescription__subtitle, section#about .aboutDescription__text {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+}
+
+section#about .aboutDescription__title {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 104.4%;
+  /* or 52px */
+  letter-spacing: -0.01em;
+  /* dark */
+  color: #273947;
+}
+
+section#about .aboutDescription__subtitle {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 125%;
+  color: #3db5e7;
+}
+
+section#about .aboutDescription__text {
+  font-weight: normal;
+  font-size: .9em;
+  line-height: 125%;
+  color: #273947;
+}
+
+section#about .aboutDescription__button {
+  width: 152px;
+  height: 48px;
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  color: #f2f3f9;
+  -webkit-box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+          box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+  border-radius: 50px;
+}
+
+section#about .cardServices {
+  position: relative;
+}
+
+section#about .cardServices__card {
+  background: #f2f3f9;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+
+section#about .cardServices__icon img {
+  width: 80px;
+  height: 82px;
+}
+
+section#about .cardServices__title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #3db5e7;
+}
+
+section#about .cardServices__text {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 125%;
+  color: #728fa3;
 }
 /*# sourceMappingURL=consultorio.css.map */
