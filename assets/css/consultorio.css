@@ -33,6 +33,21 @@
   background-color: #5cd611;
 }
 
+.btn-consultorio {
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  color: #f2f3f9;
+  -webkit-box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+          box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+  border-radius: 50px;
+}
+
+.btn-consultorio:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(270deg, #11cdd7 0%, #3db5e7 100%);
+  color: #fff;
+}
+
 body {
   max-width: 1920px;
 }
@@ -341,7 +356,7 @@ section#about .aboutDescription__subtitle {
 
 section#about .aboutDescription__text {
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 115%;
   color: #273947;
 }
@@ -480,7 +495,7 @@ section#especialidades .especialidadesContent__turnos {
 }
 
 section#especialidades .especialidadesTabs__item a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #728fa3 !important;
 }
 
@@ -519,7 +534,7 @@ section#especialidades .especialidadesTabs__detail {
 }
 
 section#especialidades .especialidadesTabs__detail .card {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
           box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
   border-radius: 35px;
@@ -527,7 +542,7 @@ section#especialidades .especialidadesTabs__detail .card {
 }
 
 section#especialidades .especialidadesTabs__detail .card .detail_title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
@@ -536,7 +551,7 @@ section#especialidades .especialidadesTabs__detail .card .detail_title {
 }
 
 section#especialidades .especialidadesTabs__detail .card .detail_text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
