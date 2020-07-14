@@ -651,6 +651,19 @@ section#elegirnos .sectionElegirnos__subtitle {
 }
 
 .tns-nav {
-  display: none !important;
+  text-align: center;
+}
+
+.tns-nav button {
+  background-color: #728fa3;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  margin: 10px 5px;
+  border: 0 !important;
+}
+
+.tns-nav button .tns-nav-active {
+  background-color: #3db5e7 !important;
 }
 /*# sourceMappingURL=consultorio.css.map */

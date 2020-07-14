@@ -496,5 +496,16 @@ section#elegirnos {
 }
 
 .tns-nav {
-    display: none !important;
+    text-align: center;
+    button {
+        background-color: $color_gray;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        margin: 10px 5px;
+        border: 0 !important;
+        .tns-nav-active {
+            background-color: $color_blue !important;
+        }
+    }
 }
