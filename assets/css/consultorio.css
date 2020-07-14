@@ -642,7 +642,7 @@ section#elegirnos .sectionElegirnos__item .card:hover {
 
 section#elegirnos .sectionElegirnos__number {
   position: absolute;
-  left: 40%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 0;
