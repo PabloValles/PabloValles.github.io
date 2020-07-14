@@ -464,46 +464,37 @@ section#elegirnos {
     position: relative;
     .sectionElegirnos {
         &__item {
-            .titlePag {
-                margin-top: 2em;
-            }
+            z-index: 999;
             .card {
-                border: 0;
                 position: relative;
-                margin-bottom: 1em;
-                margin-top: 1em;
-                transition: .3s;
-                padding-top: 1.5em;
-                padding-bottom: 1.5em;
-                &:hover {
-                    background: #FFFFFF;
-                    /* shadow card 1 */
-                    box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
-                    border-radius: 25px;
-                    overflow: hidden;
-                }
+                box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
+                border-radius: 25px;
+                border: 0;
+                margin-right: .4em;
             }
         }
-        &__number {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            font-family: "Montserrat", sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 200px;
-            line-height: 104.4%;
-            color: rgba(61, 181, 231, 0.2);
-        }
-        &__title {
-            font-family: 'Raleway', sans-serif, Arial, Helvetica;
+        &__superTitle {
+            font-family: 'Raleway', sans-serif;
             font-style: normal;
             font-weight: bold;
-            font-size: 1.5em;
+            //font-size: 3em;
+            font-size: 2em;
             line-height: 104.4%;
+            text-align: center;
             letter-spacing: -0.01em;
             color: $color_dark;
         }
+        &__subtitle {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2em;
+            line-height: 125%;
+            text-align: center;
+        }
     }
+}
+
+.tns-nav {
+    display: none !important;
 }

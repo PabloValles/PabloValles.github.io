@@ -104,6 +104,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 0 !important;
 }
 
 body {
@@ -616,51 +617,40 @@ section#elegirnos {
   position: relative;
 }
 
-section#elegirnos .sectionElegirnos__item .titlePag {
-  margin-top: 2em;
+section#elegirnos .sectionElegirnos__item {
+  z-index: 999;
 }
 
 section#elegirnos .sectionElegirnos__item .card {
-  border: 0;
   position: relative;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  -webkit-transition: .3s;
-  transition: .3s;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-
-section#elegirnos .sectionElegirnos__item .card:hover {
-  background: #FFFFFF;
-  /* shadow card 1 */
   -webkit-box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
           box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
   border-radius: 25px;
-  overflow: hidden;
+  border: 0;
+  margin-right: .4em;
 }
 
-section#elegirnos .sectionElegirnos__number {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 0;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 200px;
-  line-height: 104.4%;
-  color: rgba(61, 181, 231, 0.2);
-}
-
-section#elegirnos .sectionElegirnos__title {
-  font-family: 'Raleway', sans-serif, Arial, Helvetica;
+section#elegirnos .sectionElegirnos__superTitle {
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 104.4%;
+  text-align: center;
   letter-spacing: -0.01em;
   color: #273947;
+}
+
+section#elegirnos .sectionElegirnos__subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 125%;
+  text-align: center;
+}
+
+.tns-nav {
+  display: none !important;
 }
 /*# sourceMappingURL=consultorio.css.map */
