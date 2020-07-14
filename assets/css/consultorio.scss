@@ -480,6 +480,7 @@ section#elegirnos {
                     /* shadow card 1 */
                     box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
                     border-radius: 25px;
+                    overflow: hidden;
                 }
             }
         }
@@ -499,7 +500,7 @@ section#elegirnos {
             font-family: 'Raleway', sans-serif, Arial, Helvetica;
             font-style: normal;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.5em;
             line-height: 104.4%;
             letter-spacing: -0.01em;
             color: $color_dark;
