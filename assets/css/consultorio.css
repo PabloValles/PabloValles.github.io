@@ -33,6 +33,31 @@
   background-color: #5cd611;
 }
 
+/** Colors */
+.text_color_light {
+  color: #f2f3f9;
+}
+
+.text_color_dark {
+  color: #273947;
+}
+
+.text_color_gray {
+  color: #728fa3;
+}
+
+.text_color_blue {
+  color: #3db5e7;
+}
+
+.text_color_aqua {
+  color: #11cdd6;
+}
+
+.text_color_green {
+  color: #5cd611;
+}
+
 .btn-consultorio {
   background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
   background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
@@ -40,12 +65,45 @@
   -webkit-box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
           box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
   border-radius: 50px;
+  font-size: .8em;
 }
 
 .btn-consultorio:hover {
   background: -webkit-gradient(linear, right top, left top, from(#11cdd7), to(#3db5e7));
   background: linear-gradient(270deg, #11cdd7 0%, #3db5e7 100%);
   color: #fff;
+}
+
+.titlePag {
+  position: relative;
+  margin-top: 1em;
+}
+
+.titlePag__title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.titlePag__number {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 120px;
+  letter-spacing: -0.045em;
+  color: rgba(114, 143, 163, 0.1);
+}
+
+#linea_separador {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 body {
@@ -513,35 +571,23 @@ section#especialidades .especialidadesTabs__content {
   background-color: #fff;
   border-radius: 1em;
   z-index: 1;
-}
-
-section#especialidades .especialidadesTabs__content:before {
-  content: "";
-  z-index: 0;
-  position: absolute;
-  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
-  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
-  left: 0;
-  top: 0;
-  width: 40%;
-  height: 100%;
-  border-radius: 1em;
-}
-
-section#especialidades .especialidadesTabs__detail {
-  position: relative;
-  z-index: 999;
-}
-
-section#especialidades .especialidadesTabs__detail .card {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
-          box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
+  border: 2px solid #3db5e7;
   border-radius: 35px;
   width: 100%;
+  /* &:before {
+                content: "";
+                z-index: 0;
+                position: absolute;
+                background: $gradient_principal;
+                left: 0;
+                top: 0;
+                width: 40%;
+                height: 100%;
+                border-radius: 1em;
+            } */
 }
 
-section#especialidades .especialidadesTabs__detail .card .detail_title {
+section#especialidades .especialidadesTabs__detail .detail_title {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -550,11 +596,70 @@ section#especialidades .especialidadesTabs__detail .card .detail_title {
   color: #3db5e7 !important;
 }
 
-section#especialidades .especialidadesTabs__detail .card .detail_text {
+section#especialidades .especialidadesTabs__detail .detail_text {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
   line-height: 125%;
+}
+
+section#especialidades #especialidades__line {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section#elegirnos {
+  position: relative;
+}
+
+section#elegirnos .sectionElegirnos__item .titlePag {
+  margin-top: 2em;
+}
+
+section#elegirnos .sectionElegirnos__item .card {
+  border: 0;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+section#elegirnos .sectionElegirnos__item .card:hover {
+  background: #FFFFFF;
+  /* shadow card 1 */
+  -webkit-box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
+          box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
+  border-radius: 25px;
+}
+
+section#elegirnos .sectionElegirnos__number {
+  position: absolute;
+  left: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 104.4%;
+  color: rgba(61, 181, 231, 0.2);
+}
+
+section#elegirnos .sectionElegirnos__title {
+  font-family: 'Raleway', sans-serif, Arial, Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 104.4%;
+  letter-spacing: -0.01em;
+  color: #273947;
 }
 /*# sourceMappingURL=consultorio.css.map */

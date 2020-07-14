@@ -419,7 +419,10 @@ section#especialidades {
             background-color: #fff;
             border-radius: 1em;
             z-index: 1;
-            &:before {
+            border: 2px solid $color_blue;
+            border-radius: 35px;
+            width: 100%;
+            /* &:before {
                 content: "";
                 z-index: 0;
                 position: absolute;
@@ -429,32 +432,77 @@ section#especialidades {
                 width: 40%;
                 height: 100%;
                 border-radius: 1em;
-            }
+            } */
         }
         &__detail {
-            position: relative;
-            z-index: 999;
+            .detail_title {
+                font-family: "Raleway", sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.5em;
+                line-height: 125%;
+                color: $color_blue !important;
+            }
+            .detail_text {
+                font-family: "Raleway", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1em;
+                line-height: 125%;
+            }
+        }
+    }
+    #especialidades__line {
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+section#elegirnos {
+    position: relative;
+    .sectionElegirnos {
+        &__item {
+            .titlePag {
+                margin-top: 2em;
+            }
             .card {
-                background: #ffffff;
-                box-shadow: 0px 4px 45px rgba(114, 143, 163, 0.4);
-                border-radius: 35px;
-                width: 100%;
-                .detail_title {
-                    font-family: "Raleway", sans-serif;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 1.5em;
-                    line-height: 125%;
-                    color: $color_blue !important;
-                }
-                .detail_text {
-                    font-family: "Raleway", sans-serif;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 1em;
-                    line-height: 125%;
+                border: 0;
+                position: relative;
+                margin-bottom: 1em;
+                margin-top: 1em;
+                transition: .3s;
+                padding-top: 1.5em;
+                padding-bottom: 1.5em;
+                &:hover {
+                    background: #FFFFFF;
+                    /* shadow card 1 */
+                    box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
+                    border-radius: 25px;
                 }
             }
+        }
+        &__number {
+            position: absolute;
+            left: 40%;
+            transform: translateX(-50%);
+            top: 0;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 200px;
+            line-height: 104.4%;
+            color: rgba(61, 181, 231, 0.2);
+        }
+        &__title {
+            font-family: 'Raleway', sans-serif, Arial, Helvetica;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 104.4%;
+            letter-spacing: -0.01em;
+            color: $color_dark;
         }
     }
 }
