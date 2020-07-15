@@ -39,3 +39,21 @@
     transform: translateX(-50%);
     z-index: 0 !important;
 }
+
+.tns-nav {
+    text-align: center;
+    button {
+        background-color: $color_gray;
+        border-radius: 50%;
+        width: 1em;
+        height: 1em;
+        margin: 10px 5px;
+        border: 0 !important;
+        outline: none !important;
+    }
+    margin-bottom: 1em;
+}
+
+.tns-nav-active {
+    background-color: $color_blue !important;
+}

@@ -9,6 +9,11 @@
 
 /**======================  COLORS  ======================*/
 /** Backgrounds */
+.bg_color_gradient_principal {
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+}
+
 .bg_color_light {
   background-color: #f2f3f9;
 }
@@ -105,6 +110,25 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 0 !important;
+}
+
+.tns-nav {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.tns-nav button {
+  background-color: #728fa3;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  margin: 10px 5px;
+  border: 0 !important;
+  outline: none !important;
+}
+
+.tns-nav-active {
+  background-color: #3db5e7 !important;
 }
 
 body {
@@ -627,14 +651,21 @@ section#elegirnos .sectionElegirnos__item .card {
           box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
   border-radius: 25px;
   border: 0;
-  margin-right: .4em;
+}
+
+section#elegirnos .sectionElegirnos__item button#btn-exp {
+  font-family: 'Montserrat', 'Raleway', sans-serif;
+  border-radius: 0 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  font-size: .9em;
 }
 
 section#elegirnos .sectionElegirnos__superTitle {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 104.4%;
   text-align: center;
   letter-spacing: -0.01em;
@@ -645,25 +676,8 @@ section#elegirnos .sectionElegirnos__subtitle {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 125%;
   text-align: center;
-}
-
-.tns-nav {
-  text-align: center;
-}
-
-.tns-nav button {
-  background-color: #728fa3;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  margin: 10px 5px;
-  border: 0 !important;
-}
-
-.tns-nav button .tns-nav-active {
-  background-color: #3db5e7 !important;
 }
 /*# sourceMappingURL=consultorio.css.map */

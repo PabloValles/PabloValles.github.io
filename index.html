@@ -493,7 +493,7 @@
         </div>
         <img src="assets/img/svg/Line 1.svg" alt="" id="especialidades__line" />
     </section>
-    <section id="elegirnos" class="container-fluid bg-white">
+    <section id="elegirnos" class="container-fluid bg-white pb-3">
         <div class="row h-100 sectionElegirnos py-2">
             <div class="col-12">
                 <div class="titlePag d-flex justify-content-start align-items-center py-3 mt-4">
@@ -501,7 +501,7 @@
                     <h2 class="titlePag__title">Testimonios</h2>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 my-3">
                 <h1 class="sectionElegirnos__superTitle my-2">
                     Que dicen nuestros pacientes
                 </h1>
@@ -583,6 +583,10 @@
                     </div>
                 </div>
 
+                <div class="text-center mb-2">
+                    <button class="btn btn-light text-white text-center px-4 py-2" id="btn-exp">Comparti tu experiencia</button>
+                </div>
+
             </div>
         </div>
         <img src="assets/img/svg/Line 1.svg" alt="" id="linea_separador" />
@@ -598,12 +602,15 @@
         var slider = tns({
             container: '.my-slider',
             controls: false,
+            navPosition: 'bottom',
             fixedWidth: 400,
             items: 1,
+            gutter: 2,
             mouseDrag: true,
             slideBy: "page",
             swipeAngle: false,
             speed: 400
+                //autoplay: true
         });
     </script>
 </body>

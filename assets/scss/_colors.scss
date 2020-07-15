@@ -11,6 +11,10 @@ $color_green: #5cd611;
 
 /** Backgrounds */
 
+.bg_color_gradient_principal {
+    background: $gradient_principal;
+}
+
 .bg_color_light {
     background-color: #f2f3f9;
 }
