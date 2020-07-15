@@ -5,6 +5,7 @@ $gradient_secundary: linear-gradient(270deg, #11cdd7 0%, #3db5e7 100%);
 $color_light: #f2f3f9;
 $color_dark: #273947;
 $color_gray: #728fa3;
+$color_lg_gray: #E9EFF5;
 $color_blue: #3db5e7;
 $color_aqua: #11cdd6;
 $color_green: #5cd611;
@@ -16,27 +17,31 @@ $color_green: #5cd611;
 }
 
 .bg_color_light {
-    background-color: #f2f3f9;
+    background-color: $color_light;
 }
 
 .bg_color_dark {
-    background-color: #273947;
+    background-color: $color_dark;
 }
 
 .bg_color_gray {
-    background-color: #728fa3;
+    background-color: $color_gray;
+}
+
+.bg_color_lg_gray {
+    background-color: $color_lg_gray;
 }
 
 .bg_color_blue {
-    background-color: #3db5e7;
+    background-color: $color_blue;
 }
 
 .bg_color_aqua {
-    background-color: #11cdd6;
+    background-color: $color_aqua;
 }
 
 .bg_color_green {
-    background-color: #5cd611;
+    background-color: $color_green;
 }
 
 

@@ -470,11 +470,12 @@ section#elegirnos {
                 box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
                 border-radius: 25px;
                 overflow: hidden;
+                border: 0;
                 &__img {
                     position: absolute;
                     height: 226px;
                     width: 226px;
-                    top: -15px;
+                    top: -25px;
                     right: -105px;
                 }
             }
@@ -505,5 +506,10 @@ section#elegirnos {
             line-height: 125%;
             text-align: center;
         }
+    }
+    img#shape2 {
+        position: absolute;
+        top: 50px;
+        right: -25px;
     }
 }

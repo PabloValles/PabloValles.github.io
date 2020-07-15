@@ -26,6 +26,10 @@
   background-color: #728fa3;
 }
 
+.bg_color_lg_gray {
+  background-color: #E9EFF5;
+}
+
 .bg_color_blue {
   background-color: #3db5e7;
 }
@@ -652,13 +656,14 @@ section#elegirnos .sectionElegirnos__item .card {
           box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
   border-radius: 25px;
   overflow: hidden;
+  border: 0;
 }
 
 section#elegirnos .sectionElegirnos__item .card__img {
   position: absolute;
   height: 226px;
   width: 226px;
-  top: -15px;
+  top: -25px;
   right: -105px;
 }
 
@@ -688,5 +693,11 @@ section#elegirnos .sectionElegirnos__subtitle {
   font-size: 1em;
   line-height: 125%;
   text-align: center;
+}
+
+section#elegirnos img#shape2 {
+  position: absolute;
+  top: 50px;
+  right: -25px;
 }
 /*# sourceMappingURL=consultorio.css.map */
