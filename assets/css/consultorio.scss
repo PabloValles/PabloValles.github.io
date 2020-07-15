@@ -469,7 +469,14 @@ section#elegirnos {
                 position: relative;
                 box-shadow: 5px 20px 45px rgba(229, 229, 229, 0.8);
                 border-radius: 25px;
-                border: 0;
+                overflow: hidden;
+                &__img {
+                    position: absolute;
+                    height: 226px;
+                    width: 226px;
+                    top: -15px;
+                    right: -105px;
+                }
             }
             .my-slider {}
             button#btn-exp {
