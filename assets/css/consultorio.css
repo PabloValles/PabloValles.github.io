@@ -593,6 +593,12 @@ section#especialidades .especialidadesContent .especialidadesTitle__number {
   z-index: 0;
 }
 
+@media (min-width: 768px) {
+  section#especialidades .especialidadesContent .especialidadesTitle {
+    margin: 2em 0 !important;
+  }
+}
+
 section#especialidades .especialidadesContent__superTitle {
   font-family: Raleway;
   font-style: normal;

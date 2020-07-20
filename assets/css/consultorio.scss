@@ -394,6 +394,9 @@ section#especialidades {
                 text-shadow: 0px 4px 45px rgba(208, 210, 218, 0.65);
                 z-index: 0;
             }
+            @include md-min{
+                margin: 2em 0 !important;
+            }
         }
         &__superTitle {
             font-family: Raleway;
