@@ -50,6 +50,11 @@ section#header {
     }
     #description {
         margin-top: -80px;
+
+        @include lg-min{
+            margin-top: -40px !important;
+        }
+        
         h1 {
             position: relative;
             font-family: Raleway;
@@ -68,6 +73,10 @@ section#header {
                 font-size: 2.5em;
                 line-height: 104.4%;
             }
+
+            @include lg-min{
+                font-size: 2.5em !important;
+            }
         }
         p {
             font-family: Raleway;
@@ -75,6 +84,10 @@ section#header {
             font-weight: 300;
             font-size: 0.8em;
             line-height: 1.4em;
+
+            @include lg-min{
+                margin: 2em 0 !important;
+            }
         }
         button {
             font-family: "Raleway", sans-serif;
@@ -90,9 +103,8 @@ section#header {
             margin-left: 1em;
         }
         @include md-min {
-            margin-top: -80px;
+            margin-top: -60px;
             h1 {
-                font-size: 3.5em;
                 span {
                     font-size: 2em;
                 }
@@ -133,12 +145,16 @@ section#header {
                     height: 500px;
                     width: 500px;
                 }
+
             }
 
             @include md-min{
                 bottom: 0 !important;
                 left: 50% !important;
                 z-index: 1 !important;
+            }
+            @include lg-min{
+                
             }
         }
         #shape_points {
@@ -224,15 +240,6 @@ section#header {
             }
         }
         @include lg-min {
-            #shape_cirle {
-                right: 20px !important;
-                bottom: 50px !important;
-                z-index: 0;
-                img {
-                    width: 546px;
-                    height: 555px;
-                }
-            }
             #blur_elipse {
                 position: absolute;
                 left: 50%;

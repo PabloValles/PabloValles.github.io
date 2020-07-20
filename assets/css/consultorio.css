@@ -186,6 +186,12 @@ section#header #description {
   margin-top: -80px;
 }
 
+@media (min-width: 992px) {
+  section#header #description {
+    margin-top: -40px !important;
+  }
+}
+
 section#header #description h1 {
   position: relative;
   font-family: Raleway;
@@ -207,12 +213,24 @@ section#header #description h1 span {
   line-height: 104.4%;
 }
 
+@media (min-width: 992px) {
+  section#header #description h1 {
+    font-size: 2.5em !important;
+  }
+}
+
 section#header #description p {
   font-family: Raleway;
   font-style: normal;
   font-weight: 300;
   font-size: 0.8em;
   line-height: 1.4em;
+}
+
+@media (min-width: 992px) {
+  section#header #description p {
+    margin: 2em 0 !important;
+  }
 }
 
 section#header #description button {
@@ -234,10 +252,7 @@ section#header #description a {
 
 @media (min-width: 768px) {
   section#header #description {
-    margin-top: -80px;
-  }
-  section#header #description h1 {
-    font-size: 3.5em;
+    margin-top: -60px;
   }
   section#header #description h1 span {
     font-size: 2em;
@@ -394,15 +409,6 @@ section#header div#formas #blur_elipse img {
 }
 
 @media (min-width: 992px) {
-  section#header div#formas #shape_cirle {
-    right: 20px !important;
-    bottom: 50px !important;
-    z-index: 0;
-  }
-  section#header div#formas #shape_cirle img {
-    width: 546px;
-    height: 555px;
-  }
   section#header div#formas #blur_elipse {
     position: absolute;
     left: 50%;
