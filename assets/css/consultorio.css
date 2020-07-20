@@ -277,6 +277,21 @@ section#header div#formas #shape_cirle img {
   width: 380px;
 }
 
+@media (min-width: 768px) {
+  section#header div#formas #shape_cirle img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  section#header div#formas #shape_cirle {
+    bottom: 0 !important;
+    left: 50% !important;
+    z-index: 1 !important;
+  }
+}
+
 section#header div#formas #shape_points {
   position: absolute;
   top: 110px;
@@ -287,6 +302,14 @@ section#header div#formas #shape_points {
 section#header div#formas #shape_points img {
   width: 122.57px;
   height: 159.2px;
+}
+
+@media (min-width: 768px) {
+  section#header div#formas #shape_points {
+    top: 107px;
+    right: -40px;
+    z-index: 1;
+  }
 }
 
 section#header div#formas #img_docs {
@@ -349,6 +372,13 @@ section#header div#formas #blur_elipse {
 section#header div#formas #blur_elipse img {
   width: 533.86px;
   height: 366px;
+}
+
+@media (min-width: 768px) {
+  section#header div#formas #blur_elipse {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -437,6 +467,7 @@ section#about .aboutDescription__title {
 
 @media (min-width: 768px) {
   section#about .aboutDescription__title {
+    margin-top: 2em;
     font-size: 1.8em;
   }
 }
@@ -478,6 +509,17 @@ section#about .aboutDescription__button {
     margin-top: 2em !important;
     -ms-flex-item-align: start !important;
         align-self: flex-start !important;
+  }
+}
+
+@media (min-width: 768px) {
+  section#about .aboutDescription__image {
+    display: block !important;
+  }
+  section#about .aboutDescription__image img {
+    margin-top: 2em;
+    width: 406px;
+    height: 274px;
   }
 }
 
