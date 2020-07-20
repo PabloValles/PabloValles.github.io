@@ -427,7 +427,7 @@ section#about .aboutDescription__title, section#about .aboutDescription__subtitl
 
 section#about .aboutDescription__title {
   font-weight: bold;
-  font-size: 2.1em;
+  font-size: 1.6em;
   line-height: 104.4%;
   /* or 52px */
   letter-spacing: -0.01em;
@@ -435,11 +435,24 @@ section#about .aboutDescription__title {
   color: #273947;
 }
 
+@media (min-width: 768px) {
+  section#about .aboutDescription__title {
+    font-size: 1.8em;
+  }
+}
+
 section#about .aboutDescription__subtitle {
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 125%;
   color: #3db5e7;
+}
+
+@media (min-width: 768px) {
+  section#about .aboutDescription__subtitle {
+    font-size: 1.5em;
+    margin-top: 0 !important;
+  }
 }
 
 section#about .aboutDescription__text {
@@ -458,6 +471,14 @@ section#about .aboutDescription__button {
   -webkit-box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
           box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
   border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+  section#about .aboutDescription__button {
+    margin-top: 2em !important;
+    -ms-flex-item-align: start !important;
+        align-self: flex-start !important;
+  }
 }
 
 section#about .cardServices {
@@ -491,14 +512,24 @@ section#about .cardServices__card:hover .cardServices__icon path {
   stroke: #fff;
 }
 
+@media (min-width: 768px) {
+  section#about .cardServices__card {
+    width: 240px;
+    height: 240px;
+    padding-top: 1.7em !important;
+  }
+}
+
 section#about .cardServices__icon svg {
   width: 80px;
   height: 82px;
 }
 
-section#about .cardServices__icon img {
-  width: 80px;
-  height: 82px;
+@media (min-width: 768px) {
+  section#about .cardServices__icon svg {
+    width: 70px;
+    height: 72px;
+  }
 }
 
 section#about .cardServices__title {
@@ -511,6 +542,12 @@ section#about .cardServices__title {
   color: #3db5e7;
 }
 
+@media (min-width: 768px) {
+  section#about .cardServices__title {
+    font-size: 1.2em;
+  }
+}
+
 section#about .cardServices__text {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -518,6 +555,13 @@ section#about .cardServices__text {
   font-size: 1em;
   line-height: 125%;
   color: #728fa3;
+}
+
+@media (min-width: 768px) {
+  section#about .cardServices__text {
+    padding: 0 15px;
+    margin-bottom: 0 !important;
+  }
 }
 
 section#especialidades .especialidadesContent .especialidadesTitle {
