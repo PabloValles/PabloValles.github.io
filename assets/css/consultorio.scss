@@ -66,8 +66,9 @@ section#header {
                 position: absolute;
                 left: 10px;
                 top: -0.5em;
-                opacity: 14%;
-                font-family: Raleway;
+                //opacity: 14%;
+                color: rgba(255, 255, 255, 0.2);
+                font-family: 'Raleway', sans-serif;
                 font-style: normal;
                 font-weight: 800;
                 font-size: 2.5em;
@@ -137,6 +138,18 @@ section#header {
             bottom: -210px;
             right: -150px;
             z-index: -1;
+
+            @include md-min{
+                bottom: 0 !important;
+                left: 50% !important;
+                z-index: 1 !important;
+            }
+
+            @include lg-min{
+                bottom: -150px !important;
+                left: 50% !important;
+                z-index: 1 !important;
+            }
             img {
                 height: 380px;
                 width: 380px;
@@ -146,16 +159,14 @@ section#header {
                     width: 500px;
                 }
 
+                @include lg-min{
+                    height: 550px;
+                    width: 550px;
+                }
+
             }
 
-            @include md-min{
-                bottom: 0 !important;
-                left: 50% !important;
-                z-index: 1 !important;
-            }
-            @include lg-min{
-                
-            }
+            
         }
         #shape_points {
             position: absolute;
@@ -182,8 +193,6 @@ section#header {
                 width: 550px;
                 height: 574px;
                 @include lg-min {
-                    width: 650px;
-                    height: 674px;
                 }
             }
             @media (max-width: 767px) {
@@ -214,6 +223,14 @@ section#header {
                 width: 30px;
                 height: 30px;
             }
+
+            @include lg-min{
+                z-index: 0;
+                img{
+                    width: 50px  !important;
+                    height: 50px !important;
+                }
+            }
         }
         #blur_elipse {
             position: absolute;
@@ -228,23 +245,12 @@ section#header {
                 transform: translateX(-50%);
             }
         }
-        @include md-min {
-            #shape_cirle {
-                bottom: -60px;
-                right: -50px;
-                z-index: -1;
-                img {
-                    height: 380px;
-                    width: 380px;
-                }
-            }
-        }
         @include lg-min {
             #blur_elipse {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: -260px;
+                bottom: -300px;
                 img {
                     width: 733.86px;
                     height: 566px;
@@ -344,12 +350,50 @@ section#about {
     }
     .cardServices {
         position: relative;
+
+        @include lg-min{
+            height: 100%;
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1em;
+            row-gap: 1em;
+            align-items: center;
+
+            span#shape-gray{
+                display: inline !important;
+                background-image: url(../img/svg/formas_shapes2.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left;
+                position: absolute;
+                top: 55px;
+                left: -10px;
+                width: 194px;
+                height: 136px;
+                z-index: 0;
+            }
+            span#shape-circle{
+                display: inline !important;
+                position: absolute;
+                top: 0;
+                right:  -80%;
+                width: 800px;
+                height: 800px;
+                border-radius: 50%;
+                border: 3px solid #F2F3F9;
+                box-sizing: border-box;
+                z-index: 0;
+            }
+        }
+
         &__card {
             background: $color_light;
             border-radius: 20px;
             border: none;
             text-align: center;
             margin: 10px 0;
+            box-sizing: border-box;
+            z-index: 999;
             &:hover {
                 background: $gradient_principal;
                 box-shadow: 0px 8px 30px rgba(64, 184, 231, 0.7);
@@ -371,6 +415,18 @@ section#about {
                 height: 240px;
                 padding-top: 1.7em !important;
             }
+
+            @include lg-min{
+                margin: 2px 0;
+                width: 200px;
+                padding: 15px 10px !important;
+                &:nth-of-type(2){
+                    margin-top: 10em !important;
+                }
+                &:nth-of-type(3){
+                    margin-bottom: 10em !important;
+                }
+            }
         }
         &__icon {
             svg {
@@ -380,6 +436,7 @@ section#about {
                     width: 70px;
                     height: 72px;
                 }
+                
             }
         }
         &__title {
@@ -405,6 +462,11 @@ section#about {
 
             @include md-min{
                 padding: 0 15px;
+                margin-bottom: 0 !important;
+            }
+
+            @include lg-min{
+                padding: 0 5px;
                 margin-bottom: 0 !important;
             }
         }
@@ -538,6 +600,10 @@ section#especialidades {
 section#elegirnos {
     position: relative;
     .sectionElegirnos {
+        .tns-inner{
+            padding: 2em 0 !important;
+        }
+
         &__item {
             z-index: 999;
             .card {
@@ -554,7 +620,8 @@ section#elegirnos {
                     right: -105px;
                 }
             }
-            .my-slider {}
+            .my-slider {
+            }
             button#btn-exp {
                 font-family: 'Montserrat', 'Raleway', sans-serif;
                 border-radius: 0 !important;
