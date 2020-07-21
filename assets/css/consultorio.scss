@@ -536,6 +536,19 @@ section#especialidades {
             line-height: 104.4%;
             letter-spacing: -0.01em;
             color: $color_gray;
+            position: relative;
+
+            &::before{
+                content: " ";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -1.1em;
+                background-color: $color_green;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+            }
         }
     }
     .especialidadesTabs {
@@ -543,11 +556,16 @@ section#especialidades {
             a {
                 font-family: "Raleway", sans-serif;
                 color: $color_gray !important;
+                background: rgba(114, 143, 163, 0.2);
+                @include lg-min{
+                    border-radius: 25px;
+                    margin: 0 8px !important;
+                    padding: 25px 0 !important;
+                }
                 &.active {
                     background: $gradient_principal !important;
                     color: #fff !important;
                     box-shadow: 0px 9px 35px rgba(21, 204, 217, 0.65);
-                    border-radius: 25px;
                 }
             }
         }
@@ -559,17 +577,14 @@ section#especialidades {
             border: 2px solid $color_blue;
             border-radius: 35px;
             width: 100%;
-            /* &:before {
-                content: "";
-                z-index: 0;
-                position: absolute;
-                background: $gradient_principal;
-                left: 0;
-                top: 0;
-                width: 40%;
-                height: 100%;
-                border-radius: 1em;
-            } */
+            
+
+            @include lg-min{
+                padding: 2em 0 !important;
+                margin-top: 3em !important;
+                border-color: transparent !important;
+            }
+
         }
         &__detail {
             .detail_title {
