@@ -187,6 +187,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade profesionals__modal" id="Doc" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body py-3">
+                                <div class="modal-body__img">
+                                    <img src="assets/img/doctors/modal_fabi_2.png" alt="">
+                                </div>
+                                <div class="modal-body__personal">
+                                    <h3 class="modal-body__name">Dra. Fabiana Valles</h3>
+                                    <h6 class="modal-body__matricula">Mat 1999</h6>
+                                    <h6 class="modal-body__especialidad">Gineco Obstetra</h6>
+                                </div>
+                                <div class="modal-body__horarios">
+                                    <h5 class="font-weight-bold">Horarios de atención</h5>
+                                    <p class="my-0">Día...............Horario</p>
+                                    <p class="my-0">Día...............Horario</p>
+                                    <p class="my-0">Día...............Horario</p>
+                                </div>
+                                <span class="modal-body__componente">
+                                    <img src="assets/img/svg/formas_componente.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <span id="formas_componente_2_r">
@@ -247,6 +272,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".profesionals__card").click(function() {
+                $('#Doc').modal('show');
+            })
+        });
+    </script>
 
 </body>
 

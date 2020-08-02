@@ -1396,4 +1396,34 @@ section#header_about #description #formas_hojas img {
   top: -90px;
   z-index: 0;
 }
+
+.profesionals__modal .modal-body {
+  position: relative;
+  border-radius: 12px !important;
+  border-color: #728fa3;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profesionals__modal .modal-body__componente {
+  position: absolute;
+  top: -25%;
+  right: -38%;
+}
+
+.profesionals__modal .modal-body__componente img {
+  width: 278.5px;
+  height: 280.8px;
+}
+
+.profesionals__modal .modal-body__img {
+  position: relative;
+  z-index: 999;
+}
+
+.profesionals__modal .modal-body__personal, .profesionals__modal .modal-body__horarios {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  color: #728fa3;
+}
 /*# sourceMappingURL=consultorio.css.map */
