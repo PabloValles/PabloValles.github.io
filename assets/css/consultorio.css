@@ -130,6 +130,14 @@ body {
   max-width: 1920px;
 }
 
+#navbar_white {
+  display: none;
+}
+
+#navbar_white li a {
+  color: #273947 !important;
+}
+
 section {
   overflow: hidden;
   position: relative;
