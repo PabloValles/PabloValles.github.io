@@ -660,7 +660,6 @@ section#elegirnos {
                     right: -105px;
                 }
             }
-            .my-slider {}
             button#btn-exp {
                 font-family: 'Montserrat', 'Raleway', sans-serif;
                 border-radius: 0 !important;
@@ -824,9 +823,9 @@ section#footer {
 // Pagina 2
 // ABOUT US PAGE
 section#header_about {
-    height: 70vh !important;
+    height: 85vh !important;
     background: $gradient_principal;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 94%, 0% 100%);
     #contact_bar {
         span {
             font-family: "Montserrat", sans-serif;
@@ -882,7 +881,10 @@ section#header_about {
         @include lg-min {
             margin-top: -40px !important;
         }
-        h1 {
+        @media (max-width:576px) and (min-width:376px) {
+            margin-top: -110px;
+        }
+        ​ h1 {
             position: relative;
             font-family: Raleway;
             font-style: normal;
