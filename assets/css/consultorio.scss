@@ -25,6 +25,23 @@ section#header {
                     outline: none !important;
                 }
             }
+            ul.navbar-nav {
+                li {
+                    &.active {
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+                    a {
+                        font-family: 'Raleway', sans-serif;
+                        font-style: normal;
+                        font-size: .9em;
+                        letter-spacing: 0.055em;
+                        color: #FFFFFF;
+                        margin: 5px 18px;
+                    }
+                }
+            }
         }
     }
     #navbar_mini {
@@ -71,9 +88,16 @@ section#header {
                 font-weight: 800;
                 font-size: 2.5em;
                 line-height: 104.4%;
+                @include xl-min {
+                    top: -.55em;
+                    font-size: 3em !important;
+                }
             }
             @include lg-min {
                 font-size: 2.5em !important;
+            }
+            @include xl-min {
+                font-size: 3.5em !important;
             }
         }
         p {
@@ -191,8 +215,8 @@ section#header {
                 height: 574px;
                 @include lg-min {}
                 @include xl-min {
-                    width: 750px;
-                    height: 774px;
+                    width: 690px;
+                    height: 734px;
                 }
             }
             @media (max-width: 767px) {
@@ -684,6 +708,10 @@ section#contacto {
                 width: 100%;
                 height: 400px;
                 background-color: $color_gray;
+                @include xl-min {
+                    height: 100% !important;
+                    width: 100% !important;
+                }
             }
             #sectionContacto__direction {
                 position: absolute;
@@ -786,6 +814,249 @@ section#footer {
             right: -50px;
             top: 50%;
             transform: translateY(-50%);
+        }
+    }
+}
+
+
+/*-----------------------------------------------------*/
+
+// Pagina 2
+// ABOUT US PAGE
+section#header_about {
+    height: 50vh !important;
+    background: $gradient_principal;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    #contact_bar {
+        span {
+            font-family: "Montserrat", sans-serif;
+        }
+        .navbar {
+            .navbar-toggler {
+                &:focus {
+                    outline: none !important;
+                }
+            }
+            ul.navbar-nav {
+                li {
+                    &.active {
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+                    a {
+                        font-family: 'Raleway', sans-serif;
+                        font-style: normal;
+                        font-size: .9em;
+                        letter-spacing: 0.055em;
+                        color: #FFFFFF;
+                        margin: 5px 18px;
+                    }
+                }
+            }
+        }
+    }
+    #navbar_mini {
+        padding: 0 18px;
+        @media (max-width: 576px) {
+            text-align: center;
+            span {
+                margin: 0 4px !important;
+            }
+        }
+        span {
+            margin: 0 6px;
+        }
+        @include xs-max {
+            // span {
+            //     font-size: .8em;
+            // }
+            // span#span_phone {
+            //     display: block;
+            // }
+            display: none;
+        }
+    }
+    #description {
+        margin-top: -50px;
+        @include lg-min {
+            margin-top: -40px !important;
+        }
+        h1 {
+            position: relative;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 104.4%;
+            @include lg-min {
+                font-size: 2.5em !important;
+            }
+            @include xl-min {
+                font-size: 3.5em !important;
+            }
+        }
+        p {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.1em !important;
+            line-height: 1.4em;
+        }
+        #formas_hojas {
+            position: absolute;
+            bottom: 0;
+            right: -5px;
+            img {
+                width: 93.57px;
+                height: 133.52px;
+            }
+        }
+    }
+}
+
+.features {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    padding: 2em 0;
+    &__row_1 {
+        margin-bottom: 2em !important;
+    }
+    &__icon {
+        margin: 25px 0 5px 0;
+        img {
+            opacity: .5;
+            height: 42px !important;
+            width: 42px !important;
+        }
+        z-index: 999;
+    }
+    &__image {
+        z-index: 999 !important;
+    }
+    &__subtitle {
+        color: $color_blue;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.2em;
+        z-index: 999;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 104.4%;
+        letter-spacing: -0.01em;
+        z-index: 999;
+    }
+    &__desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: $color_dark;
+        margin-top: 1.3em;
+        z-index: 999;
+    }
+    #formas_componente_2 {
+        position: absolute;
+        bottom: -15px;
+        right: -100px;
+        z-index: -1;
+        img {
+            width: 289px;
+            height: 293px;
+        }
+    }
+}
+
+.counterAbout {
+    position: relative;
+    background: url('../img/png/bg_counter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    &__number {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 104.4%;
+        letter-spacing: 0.02em;
+    }
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 104.4%;
+        letter-spacing: -0.01em;
+        margin-bottom: 1.5em;
+    }
+}
+
+.profesionals {
+    position: relative;
+    background-color: $color_lg_gray;
+    .titlePag {
+        position: relative;
+        z-index: 999;
+    }
+    &__card {
+        background-color: #fff;
+        border-radius: 6px;
+        transition: .3s;
+        //only in sm size - margin
+        margin: 8px 0;
+        border: none !important;
+        position: relative;
+        z-index: 999;
+        &:hover {
+            box-shadow: 0px 10px 25px rgba(114, 143, 163, 0.15);
+        }
+        .card-body {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            .card-icon {
+                margin-left: 4px;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                height: 65px;
+                width: 60px;
+            }
+            .card-title,
+            .card-matricula,
+            .card-text {
+                margin-bottom: 0 !important;
+                color: $color_gray;
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+            }
+            .card-title {
+                align-self: flex-end;
+                font-weight: bold;
+                font-size: 1.05em;
+                line-height: 104.4%;
+                /* identical to box height, or 19px */
+                letter-spacing: -0.01em;
+            }
+        }
+    }
+    span {
+        position: absolute;
+        &#formas_componente_2_l {
+            left: -190px;
+            bottom: -190px;
+            z-index: 0;
+        }
+        &#formas_componente_2_r {
+            right: -260px;
+            top: -90px;
+            z-index: 0;
         }
     }
 }

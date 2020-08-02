@@ -148,6 +148,19 @@ section#header #contact_bar .navbar .navbar-toggler:focus {
   outline: none !important;
 }
 
+section#header #contact_bar .navbar ul.navbar-nav li.active a {
+  font-weight: bold;
+}
+
+section#header #contact_bar .navbar ul.navbar-nav li a {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: .9em;
+  letter-spacing: 0.055em;
+  color: #FFFFFF;
+  margin: 5px 18px;
+}
+
 section#header #navbar_mini {
   padding: 0 18px;
 }
@@ -202,9 +215,22 @@ section#header #description h1 span {
   line-height: 104.4%;
 }
 
+@media (min-width: 1200px) {
+  section#header #description h1 span {
+    top: -.55em;
+    font-size: 3em !important;
+  }
+}
+
 @media (min-width: 992px) {
   section#header #description h1 {
     font-size: 2.5em !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  section#header #description h1 {
+    font-size: 3.5em !important;
   }
 }
 
@@ -360,8 +386,8 @@ section#header div#formas #img_docs img {
 
 @media (min-width: 1200px) {
   section#header div#formas #img_docs img {
-    width: 750px;
-    height: 774px;
+    width: 690px;
+    height: 734px;
   }
 }
 
@@ -959,6 +985,13 @@ section#contacto .sectionContacto__map iframe {
   background-color: #728fa3;
 }
 
+@media (min-width: 1200px) {
+  section#contacto .sectionContacto__map iframe {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
 section#contacto .sectionContacto__map #sectionContacto__direction {
   position: absolute;
   bottom: 0;
@@ -1077,5 +1110,283 @@ section#footer .shapes__points {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+/*-----------------------------------------------------*/
+section#header_about {
+  height: 50vh !important;
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+
+section#header_about #contact_bar span {
+  font-family: "Montserrat", sans-serif;
+}
+
+section#header_about #contact_bar .navbar .navbar-toggler:focus {
+  outline: none !important;
+}
+
+section#header_about #contact_bar .navbar ul.navbar-nav li.active a {
+  font-weight: bold;
+}
+
+section#header_about #contact_bar .navbar ul.navbar-nav li a {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: .9em;
+  letter-spacing: 0.055em;
+  color: #FFFFFF;
+  margin: 5px 18px;
+}
+
+section#header_about #navbar_mini {
+  padding: 0 18px;
+}
+
+@media (max-width: 576px) {
+  section#header_about #navbar_mini {
+    text-align: center;
+  }
+  section#header_about #navbar_mini span {
+    margin: 0 4px !important;
+  }
+}
+
+section#header_about #navbar_mini span {
+  margin: 0 6px;
+}
+
+@media (max-width: 375px) {
+  section#header_about #navbar_mini {
+    display: none;
+  }
+}
+
+section#header_about #description {
+  margin-top: -50px;
+}
+
+@media (min-width: 992px) {
+  section#header_about #description {
+    margin-top: -40px !important;
+  }
+}
+
+section#header_about #description h1 {
+  position: relative;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5em;
+  line-height: 104.4%;
+}
+
+@media (min-width: 992px) {
+  section#header_about #description h1 {
+    font-size: 2.5em !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  section#header_about #description h1 {
+    font-size: 3.5em !important;
+  }
+}
+
+section#header_about #description p {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1em !important;
+  line-height: 1.4em;
+}
+
+section#header_about #description #formas_hojas {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+}
+
+section#header_about #description #formas_hojas img {
+  width: 93.57px;
+  height: 133.52px;
+}
+
+.features {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  padding: 2em 0;
+}
+
+.features__row_1 {
+  margin-bottom: 2em !important;
+}
+
+.features__icon {
+  margin: 25px 0 5px 0;
+  z-index: 999;
+}
+
+.features__icon img {
+  opacity: .5;
+  height: 42px !important;
+  width: 42px !important;
+}
+
+.features__image {
+  z-index: 999 !important;
+}
+
+.features__subtitle {
+  color: #3db5e7;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2em;
+  z-index: 999;
+}
+
+.features__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 104.4%;
+  letter-spacing: -0.01em;
+  z-index: 999;
+}
+
+.features__desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: #273947;
+  margin-top: 1.3em;
+  z-index: 999;
+}
+
+.features #formas_componente_2 {
+  position: absolute;
+  bottom: -15px;
+  right: -100px;
+  z-index: -1;
+}
+
+.features #formas_componente_2 img {
+  width: 289px;
+  height: 293px;
+}
+
+.counterAbout {
+  position: relative;
+  background: url("../img/png/bg_counter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.counterAbout__number {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 104.4%;
+  letter-spacing: 0.02em;
+}
+
+.counterAbout__title {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 104.4%;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5em;
+}
+
+.profesionals {
+  position: relative;
+  background-color: #E9EFF5;
+}
+
+.profesionals .titlePag {
+  position: relative;
+  z-index: 999;
+}
+
+.profesionals__card {
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 8px 0;
+  border: none !important;
+  position: relative;
+  z-index: 999;
+}
+
+.profesionals__card:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(114, 143, 163, 0.15);
+          box-shadow: 0px 10px 25px rgba(114, 143, 163, 0.15);
+}
+
+.profesionals__card .card-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profesionals__card .card-body .card-icon {
+  margin-left: 4px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  height: 65px;
+  width: 60px;
+}
+
+.profesionals__card .card-body .card-title,
+.profesionals__card .card-body .card-matricula,
+.profesionals__card .card-body .card-text {
+  margin-bottom: 0 !important;
+  color: #728fa3;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+}
+
+.profesionals__card .card-body .card-title {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  font-size: 1.05em;
+  line-height: 104.4%;
+  /* identical to box height, or 19px */
+  letter-spacing: -0.01em;
+}
+
+.profesionals span {
+  position: absolute;
+}
+
+.profesionals span#formas_componente_2_l {
+  left: -190px;
+  bottom: -190px;
+  z-index: 0;
+}
+
+.profesionals span#formas_componente_2_r {
+  right: -260px;
+  top: -90px;
+  z-index: 0;
 }
 /*# sourceMappingURL=consultorio.css.map */
