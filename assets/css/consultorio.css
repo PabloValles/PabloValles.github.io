@@ -1114,7 +1114,7 @@ section#footer .shapes__points {
 
 /*-----------------------------------------------------*/
 section#header_about {
-  height: 50vh !important;
+  height: 70vh !important;
   background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
   background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
