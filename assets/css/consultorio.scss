@@ -50,11 +50,9 @@ section#header {
     }
     #description {
         margin-top: -80px;
-
-        @include lg-min{
+        @include lg-min {
             margin-top: -40px !important;
         }
-        
         h1 {
             position: relative;
             font-family: Raleway;
@@ -74,8 +72,7 @@ section#header {
                 font-size: 2.5em;
                 line-height: 104.4%;
             }
-
-            @include lg-min{
+            @include lg-min {
                 font-size: 2.5em !important;
             }
         }
@@ -85,8 +82,7 @@ section#header {
             font-weight: 300;
             font-size: 0.8em;
             line-height: 1.4em;
-
-            @include lg-min{
+            @include lg-min {
                 margin: 2em 0 !important;
             }
         }
@@ -138,14 +134,12 @@ section#header {
             bottom: -210px;
             right: -150px;
             z-index: -1;
-
-            @include md-min{
+            @include md-min {
                 bottom: 0 !important;
                 left: 50% !important;
                 z-index: 1 !important;
             }
-
-            @include lg-min{
+            @include lg-min {
                 bottom: -150px !important;
                 left: 50% !important;
                 z-index: 1 !important;
@@ -153,20 +147,15 @@ section#header {
             img {
                 height: 380px;
                 width: 380px;
-
-                @include md-min{
+                @include md-min {
                     height: 500px;
                     width: 500px;
                 }
-
-                @include lg-min{
-                    height: 550px;
-                    width: 550px;
+                @include xl-min {
+                    height: 750px;
+                    width: 750px;
                 }
-
             }
-
-            
         }
         #shape_points {
             position: absolute;
@@ -176,11 +165,19 @@ section#header {
             img {
                 width: 122.57px;
                 height: 159.2px;
+                @include xl-min {
+                    width: 222.57px;
+                    height: 259.2px;
+                }
             }
-
-            @include md-min{
+            @include md-min {
                 top: 107px;
                 right: -40px;
+                z-index: 1;
+            }
+            @include xl-min {
+                top: 107px;
+                right: -80px;
                 z-index: 1;
             }
         }
@@ -192,12 +189,16 @@ section#header {
             img {
                 width: 550px;
                 height: 574px;
-                @include lg-min {
+                @include lg-min {}
+                @include xl-min {
+                    width: 750px;
+                    height: 774px;
                 }
             }
             @media (max-width: 767px) {
                 display: none;
             }
+            @include xl-min {}
         }
         #circles {
             position: absolute;
@@ -208,10 +209,7 @@ section#header {
             border-radius: 50%;
             border: 12px solid rgba(255, 255, 255, 0.2);
             box-sizing: border-box;
-
-            @include md-min{
-                
-            }
+            @include md-min {}
         }
         #down {
             position: absolute;
@@ -223,11 +221,10 @@ section#header {
                 width: 30px;
                 height: 30px;
             }
-
-            @include lg-min{
+            @include lg-min {
                 z-index: 0;
-                img{
-                    width: 50px  !important;
+                img {
+                    width: 50px !important;
                     height: 50px !important;
                 }
             }
@@ -240,7 +237,6 @@ section#header {
                 width: 533.86px;
                 height: 366px;
             }
-
             @include md-min {
                 transform: translateX(-50%);
             }
@@ -262,6 +258,10 @@ section#header {
 
 section#about {
     height: 100%;
+    @include xl-min {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .titlePag {
         position: relative;
         margin-top: 1em;
@@ -301,10 +301,9 @@ section#about {
             letter-spacing: -0.01em;
             /* dark */
             color: $color_dark;
-            @include md-min{
+            @include md-min {
                 margin-top: 2em;
                 font-size: 1.8em;
-                
             }
         }
         &__subtitle {
@@ -312,7 +311,7 @@ section#about {
             font-size: 1.4em;
             line-height: 125%;
             color: $color_blue;
-            @include md-min{
+            @include md-min {
                 font-size: 1.5em;
                 margin-top: 0 !important;
             }
@@ -330,17 +329,15 @@ section#about {
             color: $color_light;
             box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
             border-radius: 50px;
-            @include md-min{
+            @include md-min {
                 margin-top: 2em !important;
                 align-self: flex-start !important;
             }
         }
-
-        &__image{
-            @include md-min{
+        &__image {
+            @include md-min {
                 display: block !important;
-                
-                img{
+                img {
                     margin-top: 2em;
                     width: 406px;
                     height: 274px;
@@ -350,16 +347,14 @@ section#about {
     }
     .cardServices {
         position: relative;
-
-        @include lg-min{
+        @include lg-min {
             height: 100%;
             display: grid !important;
             grid-template-columns: 1fr 1fr;
             column-gap: 1em;
             row-gap: 1em;
             align-items: center;
-
-            span#shape-gray{
+            span#shape-gray {
                 display: inline !important;
                 background-image: url(../img/svg/formas_shapes2.svg);
                 background-repeat: no-repeat;
@@ -372,11 +367,11 @@ section#about {
                 height: 136px;
                 z-index: 0;
             }
-            span#shape-circle{
+            span#shape-circle {
                 display: inline !important;
                 position: absolute;
                 top: 0;
-                right:  -80%;
+                right: -80%;
                 width: 800px;
                 height: 800px;
                 border-radius: 50%;
@@ -385,7 +380,6 @@ section#about {
                 z-index: 0;
             }
         }
-
         &__card {
             background: $color_light;
             border-radius: 20px;
@@ -409,21 +403,31 @@ section#about {
                     }
                 }
             }
-
-            @include md-min{
+            @include md-min {
                 width: 240px;
                 height: 240px;
                 padding-top: 1.7em !important;
             }
-
-            @include lg-min{
+            @include lg-min {
                 margin: 2px 0;
                 width: 200px;
                 padding: 15px 10px !important;
-                &:nth-of-type(2){
+                &:nth-of-type(2) {
                     margin-top: 10em !important;
                 }
-                &:nth-of-type(3){
+                &:nth-of-type(3) {
+                    margin-bottom: 10em !important;
+                }
+            }
+            @include xl-min {
+                margin: 2px 0;
+                width: 250px;
+                height: 250px;
+                padding: 15px 10px !important;
+                &:nth-of-type(2) {
+                    margin-top: 10em !important;
+                }
+                &:nth-of-type(3) {
                     margin-bottom: 10em !important;
                 }
             }
@@ -432,11 +436,10 @@ section#about {
             svg {
                 width: 80px;
                 height: 82px;
-                @include md-min{
+                @include md-min {
                     width: 70px;
                     height: 72px;
                 }
-                
             }
         }
         &__title {
@@ -447,8 +450,7 @@ section#about {
             line-height: 24px;
             letter-spacing: 0.01em;
             color: $color_blue;
-
-            @include md-min{
+            @include md-min {
                 font-size: 1.2em;
             }
         }
@@ -459,23 +461,23 @@ section#about {
             font-size: 1em;
             line-height: 125%;
             color: $color_gray;
-
-            @include md-min{
+            @include md-min {
                 padding: 0 15px;
                 margin-bottom: 0 !important;
             }
-
-            @include lg-min{
+            @include lg-min {
                 padding: 0 5px;
                 margin-bottom: 0 !important;
             }
         }
     }
-
-    
 }
 
 section#especialidades {
+    @include xl-min {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .especialidadesContent {
         .especialidadesTitle {
             position: relative;
@@ -502,7 +504,7 @@ section#especialidades {
                 text-shadow: 0px 4px 45px rgba(208, 210, 218, 0.65);
                 z-index: 0;
             }
-            @include md-min{
+            @include md-min {
                 margin: 2em 0 !important;
             }
         }
@@ -537,8 +539,7 @@ section#especialidades {
             letter-spacing: -0.01em;
             color: $color_gray;
             position: relative;
-
-            &::before{
+            &::before {
                 content: " ";
                 position: absolute;
                 top: 50%;
@@ -557,7 +558,7 @@ section#especialidades {
                 font-family: "Raleway", sans-serif;
                 color: $color_gray !important;
                 background: rgba(114, 143, 163, 0.2);
-                @include lg-min{
+                @include lg-min {
                     border-radius: 25px;
                     margin: 0 8px !important;
                     padding: 25px 0 !important;
@@ -577,14 +578,11 @@ section#especialidades {
             border: 2px solid $color_blue;
             border-radius: 35px;
             width: 100%;
-            
-
-            @include lg-min{
+            @include lg-min {
                 padding: 2em 0 !important;
                 margin-top: 3em !important;
                 border-color: transparent !important;
             }
-
         }
         &__detail {
             .detail_title {
@@ -614,11 +612,14 @@ section#especialidades {
 
 section#elegirnos {
     position: relative;
+    @include xl-min {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .sectionElegirnos {
-        .tns-inner{
+        .tns-inner {
             padding: 2em 0 !important;
         }
-
         &__item {
             z-index: 999;
             .card {
@@ -635,8 +636,7 @@ section#elegirnos {
                     right: -105px;
                 }
             }
-            .my-slider {
-            }
+            .my-slider {}
             button#btn-exp {
                 font-family: 'Montserrat', 'Raleway', sans-serif;
                 border-radius: 0 !important;
@@ -672,6 +672,10 @@ section#elegirnos {
 }
 
 section#contacto {
+    @include xl-min {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .sectionContacto {
         &__map {
             position: relative;
