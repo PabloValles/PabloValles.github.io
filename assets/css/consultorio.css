@@ -1403,6 +1403,8 @@ section#header_about #description #formas_hojas img {
   border-color: #728fa3;
   text-align: center;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
 }
 
 .profesionals__modal .modal-body__componente {
@@ -1425,5 +1427,53 @@ section#header_about #description #formas_hojas img {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   color: #728fa3;
+}
+
+.profesionals__modal .modal-body__personal {
+  margin-bottom: 10px;
+}
+
+.profesionals__modal .modal-body__name {
+  color: #273947;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 104.4%;
+  letter-spacing: -0.01em;
+}
+
+.profesionals__modal .modal-body__matricula, .profesionals__modal .modal-body__especialidad, .profesionals__modal .modal-body__horarios {
+  font-size: 15px;
+  line-height: 104.4%;
+  letter-spacing: -0.01em;
+}
+
+.profesionals__modal .modal-body__matricula h6, .profesionals__modal .modal-body__especialidad h6, .profesionals__modal .modal-body__horarios h6 {
+  color: #273947;
+  font-size: 1.1em;
+}
+
+.profesionals__modal .modal-body__btn {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.profesionals__modal .modal-body__btn button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%) !important;
+  color: white;
+  -webkit-box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+          box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.profesionals__modal .modal-body .close {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  outline: none !important;
 }
 /*# sourceMappingURL=consultorio.css.map */

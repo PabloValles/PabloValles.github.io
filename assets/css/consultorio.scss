@@ -1068,6 +1068,7 @@ section#header_about {
             border-color: $color_gray;
             text-align: center;
             overflow: hidden;
+            display: grid;
             &__componente {
                 position: absolute;
                 top: -25%;
@@ -1086,6 +1087,48 @@ section#header_about {
                 font-family: 'Raleway', sans-serif;
                 font-style: normal;
                 color: $color_gray;
+            }
+            &__personal {
+                margin-bottom: 10px;
+            }
+            &__name {
+                color: $color_dark;
+                font-size: 1.2em;
+                font-weight: bold;
+                line-height: 104.4%;
+                letter-spacing: -0.01em;
+            }
+            &__matricula,
+            &__especialidad,
+            &__horarios {
+                font-size: 15px;
+                line-height: 104.4%;
+                letter-spacing: -0.01em;
+                h6 {
+                    color: $color_dark;
+                    font-size: 1.1em;
+                }
+            }
+            &__btn {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                button {
+                    font-family: 'Montserrat', sans-serif;
+                    background-color: $gradient_principal !important;
+                    color: white;
+                    box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
+                    border-radius: 50px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+            .close {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                outline: none !important;
             }
         }
     }
