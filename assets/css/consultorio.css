@@ -131,11 +131,7 @@ body {
 }
 
 #navbar_white {
-  display: none;
-}
-
-#navbar_white li a {
-  color: #273947 !important;
+  z-index: 9999 !important;
 }
 
 section {
