@@ -21,10 +21,16 @@ section#header {
     height: 100vh !important;
     background: $gradient_principal;
     #contact_bar {
+        position: relative;
+        z-index: 99999;
         span {
             font-family: "Montserrat", sans-serif;
         }
         .navbar {
+            @include xl-min{
+                padding-left: 5%;
+                padding-right: 5%;
+            }
             .navbar-toggler {
                 &:focus {
                     outline: none !important;
@@ -61,19 +67,21 @@ section#header {
             margin: 0 6px;
         }
         @include xs-max {
-            // span {
-            //     font-size: .8em;
-            // }
-            // span#span_phone {
-            //     display: block;
-            // }
             display: none;
+        }
+        @include xl-min{
+            padding-left: 5%;
+            padding-right: 5%;
         }
     }
     #description {
         margin-top: -80px;
         @include lg-min {
             margin-top: -40px !important;
+        }
+        @include xl-min{
+            padding-left: 5%;
+            padding-right: 5%;
         }
         h1 {
             position: relative;
@@ -181,8 +189,8 @@ section#header {
                     width: 500px;
                 }
                 @include xl-min {
-                    height: 750px;
-                    width: 750px;
+                    height: 650px;
+                    width: 650px;
                 }
             }
         }
@@ -218,10 +226,10 @@ section#header {
             img {
                 width: 550px;
                 height: 574px;
-                @include lg-min {}
-                @include xl-min {
-                    width: 690px;
-                    height: 734px;
+                
+                @include xl-min-heigth{
+                    width: 640px;
+                    height: 664px;
                 }
             }
             @media (max-width: 767px) {
@@ -753,11 +761,11 @@ section#contacto {
 
 section#footer {
     overflow: hidden;
+    background: $gradient_principal;
+   
     a{
         text-decoration: none;
         color: #fff;
-
-
     }
     .sectionFooter {
         position: relative;
@@ -847,6 +855,10 @@ section#header_about {
                     outline: none !important;
                 }
             }
+            @include xl-min{
+                padding-left: 5%;
+                padding-right: 5%;
+            }
             ul.navbar-nav {
                 li {
                     &.active {
@@ -886,36 +898,24 @@ section#header_about {
             // }
             display: none;
         }
+        @include xl-min{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
     }
     #description {
         margin-top: -50px;
+        
         @include lg-min {
             margin-top: -40px !important;
+        }
+        @include xl-min {
+            margin-top: -70px !important;
         }
         @media (max-width:576px) and (min-width:376px) {
             margin-top: -110px;
         }
-        ​ h1 {
-            position: relative;
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 2.5em;
-            line-height: 104.4%;
-            @include lg-min {
-                font-size: 2.5em !important;
-            }
-            @include xl-min {
-                font-size: 3.5em !important;
-            }
-        }
-        p {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.1em !important;
-            line-height: 1.4em;
-        }
+        
         #formas_hojas {
             position: absolute;
             bottom: 0;
@@ -926,12 +926,40 @@ section#header_about {
             }
         }
     }
+    .description_title {
+        position: relative;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5em;
+        line-height: 104.4%;
+
+        @include xl-min {
+            font-size: 3.5em !important;
+        }
+    }
+    p.description_subtitle{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1em !important;
+        line-height: 1.4em;
+
+        @include xl-min{
+            font-size: 1.5em !important;
+        }
+    }
 }
 
 .features {
     position: relative;
     font-family: 'Raleway', sans-serif;
     padding: 2em 0;
+
+    @include xl-min{
+        padding: 2em 5%;
+    }
+
     &__row_1 {
         margin-bottom: 2em !important;
     }
@@ -991,6 +1019,12 @@ section#header_about {
     background-size: cover;
     background-position: center;
     color: #fff;
+
+    @include xl-min{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     &__number {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
@@ -1020,6 +1054,10 @@ section#header_about {
 .profesionals {
     position: relative;
     background-color: $color_lg_gray;
+    @include xl-min{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .titlePag {
         position: relative;
         z-index: 999;
@@ -1085,22 +1123,34 @@ section#header_about {
     &__modal {
         .modal-body {
             position: relative;
-            border-radius: 12px !important;
-            border-color: $color_gray;
-            text-align: center;
-            overflow: hidden;
-            display: grid;
             font-family: 'Raleway', sans-serif;
             font-style: normal;
-            color: $color_gray;
+            border-radius: 12px !important;
+            border-color: $color_gray;
+            overflow: hidden;
+            display: grid;
+            text-align: center;
+            @include lg-min{
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
+                justify-items: center;
+                text-align: left;
+            }
+
             &__componente {
                 position: absolute;
                 top: -25%;
                 right: -38%;
 
-                @include md-min{
+                @include sm-min{
                     right: -26%;
                     top: -26%;
+                }
+
+                @include lg-min{
+                    right: -26%;
+                    top: -36%;
                 }
 
                 img {
@@ -1111,9 +1161,16 @@ section#header_about {
             &__img {
                 position: relative;
                 z-index: 999;
+
+                @include lg-min{
+                    grid-row: 1/ span 2;
+                }
             }
             &__personal {
                 margin-bottom: 10px;
+                @include lg-min{
+                    grid-row: 1/ span 3;
+                }
             }
             &__name {
                 color: $color_dark;
@@ -1121,6 +1178,11 @@ section#header_about {
                 font-weight: bold;
                 line-height: 104.4%;
                 letter-spacing: -0.01em;
+                position: relative;
+                z-index: 9999;
+                @include lg-min{
+                    font-size: 1.4em;
+                }
             }
             &__matricula,
             &__especialidad,
@@ -1132,13 +1194,18 @@ section#header_about {
                     color: $color_dark;
                     font-size: 1.1em;
                 }
+
+                @include lg-min{
+                    letter-spacing: 0 !important;
+                }
             }
             &__btn {
                 margin-top: 1em;
                 margin-bottom: 1em;
                 button {
                     font-family: 'Montserrat', sans-serif;
-                    background-color: $gradient_principal !important;
+                    background: $gradient_secundary !important;
+                    border: 0 !important;
                     color: white;
                     box-shadow: 0px 6px 25px rgba(55, 185, 229, 0.8);
                     border-radius: 50px;
