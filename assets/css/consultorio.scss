@@ -3,8 +3,9 @@
 @import "../scss/colors";
 @import "../scss/variables";
 //=========================================================
-body {
-    max-width: 1920px;
+
+main {
+    max-width: 1920px !important;
 }
 
 #navbar_white {
@@ -935,7 +936,8 @@ section#header_about {
         line-height: 104.4%;
 
         @include xl-min {
-            font-size: 3.5em !important;
+            font-size: 2.5em !important;
+
         }
     }
     p.description_subtitle{

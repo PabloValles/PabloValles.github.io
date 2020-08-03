@@ -125,8 +125,8 @@
   background: #3db5e7 !important;
 }
 
-body {
-  max-width: 1920px;
+main {
+  max-width: 1920px !important;
 }
 
 #navbar_white {
@@ -1260,7 +1260,7 @@ section#header_about .description_title {
 
 @media (min-width: 1200px) {
   section#header_about .description_title {
-    font-size: 3.5em !important;
+    font-size: 2.5em !important;
   }
 }
 
