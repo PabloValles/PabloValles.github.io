@@ -1036,6 +1036,11 @@ section#footer {
   overflow: hidden;
 }
 
+section#footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
 section#footer .sectionFooter {
   position: relative;
   z-index: 999;
@@ -1319,6 +1324,14 @@ section#header_about #description #formas_hojas img {
   margin-bottom: 1.5em;
 }
 
+@media (min-width: 768px) {
+  .counterAbout__title {
+    margin-bottom: 0 !important;
+    font-size: 1.3em;
+    letter-spacing: 0;
+  }
+}
+
 .profesionals {
   position: relative;
   background-color: #E9EFF5;
@@ -1343,6 +1356,7 @@ section#header_about #description #formas_hojas img {
 .profesionals__card:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(114, 143, 163, 0.15);
           box-shadow: 0px 10px 25px rgba(114, 143, 163, 0.15);
+  cursor: pointer;
 }
 
 .profesionals__card .card-body {
@@ -1409,12 +1423,22 @@ section#header_about #description #formas_hojas img {
   overflow: hidden;
   display: -ms-grid;
   display: grid;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  color: #728fa3;
 }
 
 .profesionals__modal .modal-body__componente {
   position: absolute;
   top: -25%;
   right: -38%;
+}
+
+@media (min-width: 768px) {
+  .profesionals__modal .modal-body__componente {
+    right: -26%;
+    top: -26%;
+  }
 }
 
 .profesionals__modal .modal-body__componente img {
@@ -1425,12 +1449,6 @@ section#header_about #description #formas_hojas img {
 .profesionals__modal .modal-body__img {
   position: relative;
   z-index: 999;
-}
-
-.profesionals__modal .modal-body__personal, .profesionals__modal .modal-body__horarios {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  color: #728fa3;
 }
 
 .profesionals__modal .modal-body__personal {

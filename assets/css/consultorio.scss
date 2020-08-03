@@ -753,6 +753,12 @@ section#contacto {
 
 section#footer {
     overflow: hidden;
+    a{
+        text-decoration: none;
+        color: #fff;
+
+
+    }
     .sectionFooter {
         position: relative;
         z-index: 999;
@@ -1001,6 +1007,13 @@ section#header_about {
         line-height: 104.4%;
         letter-spacing: -0.01em;
         margin-bottom: 1.5em;
+
+        @include md-min{
+            margin-bottom: 0 !important;
+            font-size: 1.3em;
+            letter-spacing: 0;
+        }
+
     }
 }
 
@@ -1022,6 +1035,7 @@ section#header_about {
         z-index: 999;
         &:hover {
             box-shadow: 0px 10px 25px rgba(114, 143, 163, 0.15);
+            cursor: pointer;
         }
         .card-body {
             display: grid;
@@ -1059,6 +1073,8 @@ section#header_about {
             left: -190px;
             bottom: -190px;
             z-index: 0;
+
+
         }
         &#formas_componente_2_r {
             right: -260px;
@@ -1074,10 +1090,19 @@ section#header_about {
             text-align: center;
             overflow: hidden;
             display: grid;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            color: $color_gray;
             &__componente {
                 position: absolute;
                 top: -25%;
                 right: -38%;
+
+                @include md-min{
+                    right: -26%;
+                    top: -26%;
+                }
+
                 img {
                     width: 278.5px;
                     height: 280.8px;
@@ -1086,12 +1111,6 @@ section#header_about {
             &__img {
                 position: relative;
                 z-index: 999;
-            }
-            &__personal,
-            &__horarios {
-                font-family: 'Raleway', sans-serif;
-                font-style: normal;
-                color: $color_gray;
             }
             &__personal {
                 margin-bottom: 10px;
