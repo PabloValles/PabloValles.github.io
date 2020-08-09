@@ -1658,7 +1658,8 @@ section#servicios_especialidades .servicios_especialidades__card #servicios_espe
   transition: .15s;
 }
 
-section#servicios_especialidades .servicios_especialidades__card #servicios_especialidades__card__text h4, section#servicios_especialidades .servicios_especialidades__card #servicios_especialidades__card__text p {
+section#servicios_especialidades .servicios_especialidades__card #servicios_especialidades__card__text h4,
+section#servicios_especialidades .servicios_especialidades__card #servicios_especialidades__card__text p {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   line-height: 104.4%;
@@ -1679,8 +1680,8 @@ section#servicios_especialidades .servicios_especialidades__card:hover {
   background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
   background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
   color: #fff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 section#servicios_especialidades .servicios_especialidades__card:hover #servicios_especialidades__card__icon i {
