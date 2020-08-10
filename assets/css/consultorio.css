@@ -1619,6 +1619,13 @@ section#header_about p.description_subtitle {
 }
 
 /*-----------------------------------------------------*/
+@media (min-width: 1200px) {
+  section#servicios_especialidades .servicios_especialidades {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 section#servicios_especialidades .servicios_especialidades__title {
   position: relative;
   font-family: 'Raleway', sans-serif;
@@ -1688,6 +1695,13 @@ section#servicios_especialidades .servicios_especialidades__card:hover #servicio
   color: #fff;
 }
 
+@media (min-width: 1200px) {
+  section#servicios_contacto .servicios_contacto {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 section#servicios_contacto .servicios_contacto__title {
   position: relative;
   font-family: 'Raleway', sans-serif;
@@ -1717,6 +1731,8 @@ section#servicios_contacto .servicios_contacto__card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 section#servicios_contacto .servicios_contacto__card .card-title {
@@ -1752,5 +1768,88 @@ section#servicios_contacto .servicios_contacto__card .card-text {
   line-height: 104.4%;
   text-align: center;
   color: #728fa3;
+}
+
+section#servicios_contacto .servicios_contacto__card:hover {
+  border: 4px solid #3db5e7;
+}
+
+section#turnos_especialidades .turnos_especialidades {
+  background-image: url(../img/bg_turnos.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1200px) {
+  section#turnos_especialidades .turnos_especialidades {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+section#turnos_especialidades .turnos_especialidades__title {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  color: #728fa3;
+}
+
+section#turnos_especialidades .turnos_especialidades__title::after {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 4px;
+  background-color: #3db5e7;
+  bottom: -18px;
+  border-radius: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form {
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row label {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #728FA3;
+}
+
+section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row input, section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row select {
+  border: 1px solid #d3d3d3;
+  border-radius: 7px;
+}
+
+section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row input:active, section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row input:focus, section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row select:active, section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row select:focus {
+  -webkit-box-shadow: 0 0 0 0 !important;
+          box-shadow: 0 0 0 0 !important;
+  border: 1.5px solid #3db5e7;
+}
+
+section#turnos_especialidades .turnos_especialidades #turnos_especialidades__form .form-row button {
+  background: -webkit-gradient(linear, left top, right top, from(#11CDD7), to(#3DB5E7));
+  background: linear-gradient(90deg, #11CDD7 0%, #3DB5E7 100%);
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  border: 0 !important;
 }
 /*# sourceMappingURL=consultorio.css.map */

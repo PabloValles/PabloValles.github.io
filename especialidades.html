@@ -202,16 +202,16 @@
         </div>
     </section>
 
-    <section id="servicios_contacto">
+    <section id="servicios_contacto" class="py-2 py-lg-5">
         <div class="container-fluid servicios_contacto">
-            <div class="row h-100 py-2 pb-4">
+            <div class="row h-100 py-2 pb-4 mb-lg-5">
                 <div class="col-12 text-center my-4 mb-5">
                     <h2 class="text_color_dark servicios_contacto__title mb-4">Comunícate con nosotros</h2>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card servicios_contacto__card">
-                        <div class="card-body text-center py-4">
+                        <div class="card-body text-center py-5">
                             <img src="assets/img/svg/icon_contact_phone.svg" alt="" class="card-imagen mb-4">
                             <h5 class="card-title">Llámenos</h5>
                             <p class="card-text mt-4">0261 - 4246059</p>
@@ -222,7 +222,7 @@
 
                 <div class="col-sm-12 col-md-6 col-lg-4 my-4 my-md-0">
                     <div class="card servicios_contacto__card">
-                        <div class="card-body text-center py-4">
+                        <div class="card-body text-center py-5">
                             <img src="assets/img/svg/icon_contact_mail.svg" alt="" class="card-imagen mb-4">
                             <h5 class="card-title">E - mail</h5>
                             <p class="card-text mt-4">info@consultorio.com</p>
@@ -231,9 +231,9 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-4 my-lg-0">
+                <div class="col-sm-12 col-md-6 offset-md-3  offset-lg-0 col-lg-4 mt-4 my-lg-0">
                     <div class="card servicios_contacto__card">
-                        <div class="card-body text-center py-4">
+                        <div class="card-body text-center py-5">
                             <img src="assets/img/svg/icon_contact_location.svg" alt="" class="card-imagen mb-4">
                             <h5 class="card-title">Ubicación</h5>
                             <p class="card-text mt-4">Cmte. Fossa 98 B° Bombal </p>
@@ -259,6 +259,69 @@
                 <div class="col-sm-12 col-md-4">
                     <h3 class="counterAbout__number">12</h3>
                     <h3 class="counterAbout__title">Profesionales</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="turnos_especialidades">
+        <div class="container-fluid turnos_especialidades">
+            <div class="row h-100">
+                <div class="col-12 col-md-6 col-lg-5 px-md-5 py-5" id="turnos_especialidades__form">
+                    <form id="frm_turnos" class="turnos_especialidades__form">
+                        <h2 class="text_color_dark turnos_especialidades__title mb-5 text-center">Solicitá un turno</h2>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="turnos_name">Nombre y apellido</label>
+                                <input type="name" class="form-control turnos_name" id="turnos_name" placeholder="Nombre completo" autocomplete="off">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="turnos_tel">Teléfono</label>
+                                <input type="number" class="form-control turnos_tel" id="turnos_tel" placeholder="Número de teléfono">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="turnos_email">E-mail</label>
+                                <input type="email" class="form-control turnos_email" id="turnos_email" placeholder="E-mail">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="turnos_profesional">Seleccione el profesional</label>
+                                <select id="turnos_profesional" class="form-control" name="turnos_profesional">
+                                    <option>Dr. 1</option>
+                                    <option>Dr. 2</option>
+                                    <option>Dr. 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="turnos_dia">Día</label>
+                                <select id="turnos_dia" class="form-control" name="turnos_dia">
+                                    <option>Lunes</option>
+                                    <option>Martes</option>
+                                    <option>Miercoles</option>
+                                    <option>Jueves</option>
+                                    <option>Viernes</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="turnos_tiempo">Horario</label>
+                                <input type="time" class="form-control turnos_tiempo" id="turnos_tiempo">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="turnos_os">Seleccione su obra social o particular</label>
+                                <select id="turnos_os" class="form-control" name="turnos_os">
+                                    <option>Obra Social 1</option>
+                                    <option>Obra Social 2</option>
+                                    <option>Obra Social 3</option>
+                                    <option>Obra Social 4</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 mt-3 text-md-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-md-4">Solicitar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-7">
+
                 </div>
             </div>
         </div>
