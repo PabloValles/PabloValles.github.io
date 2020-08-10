@@ -1281,6 +1281,7 @@ section#servicios_especialidades {
 }
 
 section#servicios_contacto {
+    position: relative;
     .servicios_contacto {
         @include xl-min {
             padding-left: 5%;
@@ -1313,6 +1314,9 @@ section#servicios_contacto {
             box-sizing: border-box;
             border-radius: 20px;
             transition: .3s;
+            background-color: #fff;
+            position: relative;
+            z-index: 999;
             .card-title {
                 font-family: 'Raleway', sans-serif;
                 font-style: normal;
@@ -1349,10 +1353,44 @@ section#servicios_contacto {
                 border: 4px solid $color_blue;
             }
         }
+
+        
+    }
+    #componente{
+        position: absolute;
+        width: 489px;
+        height: 493px;
+        background: url(../img/svg/formas_componente.svg);
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+
+        &.componente__down{
+            top: -50px;
+            right: -250px;
+        }
+    }
+}
+
+section#counter_about{
+    position: relative;
+    overflow: visible;
+    #shapes_hojas{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: url(../img/svg/formas_hojas.svg);
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        top: -50px;
+        left: -20px;
+        transform: rotateY(160deg);
     }
 }
 
 section#turnos_especialidades{
+    //overflow: visible;
     .turnos_especialidades{
         @include xl-min {
             padding-left: 5%;

@@ -1695,6 +1695,10 @@ section#servicios_especialidades .servicios_especialidades__card:hover #servicio
   color: #fff;
 }
 
+section#servicios_contacto {
+  position: relative;
+}
+
 @media (min-width: 1200px) {
   section#servicios_contacto .servicios_contacto {
     padding-left: 5%;
@@ -1733,6 +1737,9 @@ section#servicios_contacto .servicios_contacto__card {
   border-radius: 20px;
   -webkit-transition: .3s;
   transition: .3s;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
 }
 
 section#servicios_contacto .servicios_contacto__card .card-title {
@@ -1772,6 +1779,40 @@ section#servicios_contacto .servicios_contacto__card .card-text {
 
 section#servicios_contacto .servicios_contacto__card:hover {
   border: 4px solid #3db5e7;
+}
+
+section#servicios_contacto #componente {
+  position: absolute;
+  width: 489px;
+  height: 493px;
+  background: url(../img/svg/formas_componente.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+section#servicios_contacto #componente.componente__down {
+  top: -50px;
+  right: -250px;
+}
+
+section#counter_about {
+  position: relative;
+  overflow: visible;
+}
+
+section#counter_about #shapes_hojas {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url(../img/svg/formas_hojas.svg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  top: -50px;
+  left: -20px;
+  -webkit-transform: rotateY(160deg);
+          transform: rotateY(160deg);
 }
 
 section#turnos_especialidades .turnos_especialidades {
