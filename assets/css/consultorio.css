@@ -1047,13 +1047,13 @@ section#contacto .sectionContacto #formulario_contacto_col {
 }
 
 section#contacto .sectionContacto__frm .form-control {
-  border: 0 !important;
+  border: 2px solid transparent !important;
 }
 
-section#contacto .sectionContacto__frm .form-control:active {
+section#contacto .sectionContacto__frm .form-control:active, section#contacto .sectionContacto__frm .form-control:focus {
   border: 2px solid #728fa3 !important;
-  -webkit-box-shadow: 0 0 0 0 transparent !important;
-          box-shadow: 0 0 0 0 transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: none !important;
 }
 

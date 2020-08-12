@@ -747,10 +747,10 @@ section#contacto {
         }
         &__frm {
             .form-control {
-                border: 0 !important;
-                &:active {
+                border: 2px solid transparent !important;
+                &:active, &:focus {
                     border: 2px solid $color_gray !important;
-                    box-shadow: 0 0 0 0 transparent !important;
+                    box-shadow: none;
                     outline: none !important;
                 }
             }
