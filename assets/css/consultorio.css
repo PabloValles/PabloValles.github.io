@@ -1947,8 +1947,9 @@ section#turnos_especialidades .turnos_especialidades #turnos_especialidades__for
 }
 
 #departamentos .nav-pills-custom .nav-link.active {
-  color: #3db5e7;
-  background: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#11cdd7), to(#3db5e7));
+  background: linear-gradient(90deg, #11cdd7 0%, #3db5e7 100%);
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -1956,7 +1957,7 @@ section#turnos_especialidades .turnos_especialidades #turnos_especialidades__for
     content: '';
     display: block;
     border-top: 8px solid transparent;
-    border-left: 10px solid #fff;
+    border-left: 10px solid #3db5e7;
     border-bottom: 8px solid transparent;
     position: absolute;
     top: 50%;

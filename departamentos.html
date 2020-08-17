@@ -34,7 +34,7 @@
                     <a class="nav-link" href="especialidades.html">Especialidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Turnos</a>
+                    <a class="nav-link" href="departamentos.html">Departamentos</a>
                 </li>
             </ul>
         </div>
@@ -72,11 +72,11 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="about.html">Nosotros</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="especialidades.html">Especialidades</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Turnos</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="departamentos.html">Departamentos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="assets/img/svg/icon_search.svg" alt="" /></a>
@@ -104,7 +104,7 @@
 
     <section id="departamentos">
         <div class="container-fluid py-5 departamentos">
-            <div class="row">
+            <div class="row py-3">
                 <div class="col-12 text-center my-4 ">
                     <h2 class="text_color_dark departamentos__title mb-4">Nuestros servicios médicos</h2>
                 </div>
@@ -112,48 +112,320 @@
                 <div class="col-md-3">
                     <!-- Tabs nav -->
                     <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <a class="nav-link mb-3 p-3 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
                             <i class="fa fa-user-circle-o mr-2"></i>
                             <span class="font-weight-bold small text-uppercase">Ginecología</span></a>
 
-                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <a class="nav-link mb-3 p-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                             <i class="fa fa-calendar-minus-o mr-2"></i>
                             <span class="font-weight-bold small text-uppercase">Cardiología</span></a>
 
-                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <a class="nav-link mb-3 p-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                             <i class="fa fa-star mr-2"></i>
                             <span class="font-weight-bold small text-uppercase">Pediatría</span></a>
 
-                        <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <a class="nav-link mb-3 p-3" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                             <i class="fa fa-check mr-2"></i>
                             <span class="font-weight-bold small text-uppercase">Traumotología</span></a>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <!-- Tabs content -->
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade  rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <h4 class="font-italic mb-4">Personal information</h4>
+                    <div class="tab-content " id="v-pills-tabContent">
+                        <div class="tab-pane fade rounded bg-white show active p-3 px-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <h4 class="font-italic mb-4 text_color_gray">Ginecología</h4>
                             <p class="text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Doctores</h4>
+                                    <ul class="list-unstyled text_color_blue font-weight-bolder">
+                                        <li>Doctor 1</li>
+                                        <li>Doctor 2</li>
+                                        <li>Doctor 3</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Horarios</h4>
+                                    <ul class="list-unstyled text_color_gray ">
+                                        <li>Lunes </li>
+                                        <li>Martes </li>
+                                        <li>Miercoles </li>
+                                        <li>Viernes </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <h4 class="font-italic mb-4 text_color_gray">Preguntas frequentes</h4>
+                                    <div id="preguntasFrequentes" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section1HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId" class="text-white">
+                                              Pregunta n° 1
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                                <div class="card-body">
+                                                    Section 1 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section2HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 2
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                                <div class="card-body">
+                                                    Section 2 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section3HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section3ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 3
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                                <div class="card-body">
+                                                    Section 3 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade  rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <h4 class="font-italic mb-4">Bookings</h4>
+                        <div class="tab-pane fade  rounded bg-white p-3 px-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h4 class="font-italic mb-4 text_color_gray">Cardiología</h4>
                             <p class="text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Doctores</h4>
+                                    <ul class="list-unstyled text_color_blue font-weight-bolder">
+                                        <li>Doctor 1</li>
+                                        <li>Doctor 2</li>
+                                        <li>Doctor 3</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Horarios</h4>
+                                    <ul class="list-unstyled text_color_gray ">
+                                        <li>Lunes </li>
+                                        <li>Martes </li>
+                                        <li>Miercoles </li>
+                                        <li>Viernes </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <h4 class="font-italic mb-4 text_color_gray">Preguntas frequentes</h4>
+                                    <div id="preguntasFrequentes" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section1HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId" class="text-white">
+                                              Pregunta n° 1
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                                <div class="card-body">
+                                                    Section 1 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section2HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 2
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                                <div class="card-body">
+                                                    Section 2 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section3HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section3ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 3
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                                <div class="card-body">
+                                                    Section 3 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade  rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <h4 class="font-italic mb-4">Reviews</h4>
+                        <div class="tab-pane fade  rounded bg-white p-3 px-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <h4 class="font-italic mb-4 text_color_gray">Pediatría</h4>
                             <p class="text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Doctores</h4>
+                                    <ul class="list-unstyled text_color_blue font-weight-bolder">
+                                        <li>Doctor 1</li>
+                                        <li>Doctor 2</li>
+                                        <li>Doctor 3</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Horarios</h4>
+                                    <ul class="list-unstyled text_color_gray ">
+                                        <li>Lunes </li>
+                                        <li>Martes </li>
+                                        <li>Miercoles </li>
+                                        <li>Viernes </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <h4 class="font-italic mb-4 text_color_gray">Preguntas frequentes</h4>
+                                    <div id="preguntasFrequentes" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section1HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId" class="text-white">
+                                              Pregunta n° 1
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                                <div class="card-body">
+                                                    Section 1 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section2HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 2
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                                <div class="card-body">
+                                                    Section 2 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section3HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section3ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 3
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                                <div class="card-body">
+                                                    Section 3 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade  rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                            <h4 class="font-italic mb-4">Confirm booking</h4>
+                        <div class="tab-pane fade  rounded bg-white p-3 px-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <h4 class="font-italic mb-4 text_color_gray">Traumatología</h4>
                             <p class="text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Doctores</h4>
+                                    <ul class="list-unstyled text_color_blue font-weight-bolder">
+                                        <li>Doctor 1</li>
+                                        <li>Doctor 2</li>
+                                        <li>Doctor 3</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="font-bold mb-2 text_color_gray">Horarios</h4>
+                                    <ul class="list-unstyled text_color_gray ">
+                                        <li>Lunes </li>
+                                        <li>Martes </li>
+                                        <li>Miercoles </li>
+                                        <li>Viernes </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <h4 class="font-italic mb-4 text_color_gray">Preguntas frequentes</h4>
+                                    <div id="preguntasFrequentes" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section1HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId" class="text-white">
+                                              Pregunta n° 1
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                                <div class="card-body">
+                                                    Section 1 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section2HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 2
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                                <div class="card-body">
+                                                    Section 2 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg_color_gradient_principal" role="tab" id="section3HeaderId">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#preguntasFrequentes" href="#section3ContentId" aria-expanded="true" aria-controls="section2ContentId" class="text-white">
+                                              Pregunta n° 3
+                                            </a>
+                                                </h5>
+                                            </div>
+                                            <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                                <div class="card-body">
+                                                    Section 3 content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

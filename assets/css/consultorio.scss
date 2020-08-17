@@ -1500,8 +1500,8 @@ section#turnos_especialidades {
         position: relative;
     }
     .nav-pills-custom .nav-link.active {
-        color: $color_blue;
-        background: #fff;
+        background: $gradient_principal;
+        color: #fff;
     }
     /* Add indicator arrow for the active tab */
     @media (min-width: 992px) {
@@ -1509,7 +1509,7 @@ section#turnos_especialidades {
             content: '';
             display: block;
             border-top: 8px solid transparent;
-            border-left: 10px solid #fff;
+            border-left: 10px solid $color_blue;
             border-bottom: 8px solid transparent;
             position: absolute;
             top: 50%;
@@ -1521,4 +1521,5 @@ section#turnos_especialidades {
     .nav-pills-custom .nav-link.active::before {
         opacity: 1;
     }
+    .tab-pane {}
 }
