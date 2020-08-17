@@ -748,7 +748,8 @@ section#contacto {
         &__frm {
             .form-control {
                 border: 2px solid transparent !important;
-                &:active, &:focus {
+                &:active,
+                &:focus {
                     border: 2px solid $color_gray !important;
                     box-shadow: none;
                     outline: none !important;
@@ -843,6 +844,9 @@ section#header_about {
     height: 85vh !important;
     background: $gradient_principal;
     clip-path: polygon(0 0, 100% 0%, 100% 94%, 0% 100%);
+    @include xl-min {
+        height: 60vh !important;
+    }
     #contact_bar {
         span {
             font-family: "Montserrat", sans-serif;
@@ -1348,15 +1352,12 @@ section#servicios_contacto {
                 text-align: center;
                 color: $color_gray;
             }
-
-            &:hover{
+            &:hover {
                 border: 4px solid $color_blue;
             }
         }
-
-        
     }
-    #componente{
+    #componente {
         position: absolute;
         width: 489px;
         height: 493px;
@@ -1364,18 +1365,17 @@ section#servicios_contacto {
         background-size: cover;
         background-position: center;
         z-index: 0;
-
-        &.componente__down{
+        &.componente__down {
             top: -50px;
             right: -250px;
         }
     }
 }
 
-section#counter_about{
+section#counter_about {
     position: relative;
     overflow: visible;
-    #shapes_hojas{
+    #shapes_hojas {
         position: absolute;
         width: 100px;
         height: 100px;
@@ -1389,14 +1389,13 @@ section#counter_about{
     }
 }
 
-section#turnos_especialidades{
+section#turnos_especialidades {
     //overflow: visible;
-    .turnos_especialidades{
+    .turnos_especialidades {
         @include xl-min {
             padding-left: 5%;
             padding-right: 5%;
         }
-
         background-image: url(../img/bg_turnos.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -1420,15 +1419,13 @@ section#turnos_especialidades{
                 transform: translateX(-50%);
             }
         }
-
-        #turnos_especialidades__form{
+        #turnos_especialidades__form {
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(30px);
             display: flex;
             align-items: center;
-
-            .form-row{
-                label{
+            .form-row {
+                label {
                     font-family: 'Raleway', sans-serif;
                     font-style: normal;
                     font-weight: bold;
@@ -1436,18 +1433,17 @@ section#turnos_especialidades{
                     letter-spacing: 0.01em;
                     color: #728FA3;
                 }
-
-                input, select{
+                input,
+                select {
                     border: 1px solid #d3d3d3;
                     border-radius: 7px;
-                    
-                    &:active, &:focus{
+                    &:active,
+                    &:focus {
                         box-shadow: 0 0 0 0 !important;
                         border: 1.5px solid $color_blue;
                     }
                 }
-
-                button{
+                button {
                     background: linear-gradient(90deg, #11CDD7 0%, #3DB5E7 100%);
                     border-radius: 4px;
                     font-family: 'Montserrat', sans-serif;
@@ -1458,17 +1454,71 @@ section#turnos_especialidades{
                 }
             }
         }
-
-
     }
-    
-
-    
-
-    
 }
+
 
 /*-----------------------------------------------------*/
 
 // Pagina 4
 // CONTACTO PAGE
+
+/*-----------------------------------------------------*/
+
+// Pagina 5
+// DEPARTAMENTOS PAGE
+#departamentos {
+    @include xl-min {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .departamentos__title {
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        //font-size: 40px;
+        font-size: 2em;
+        line-height: 104.4%;
+        letter-spacing: -0.01em;
+        color: $color_gray;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 59px;
+            height: 6px;
+            background-color: $color_blue;
+            bottom: -18px;
+            border-radius: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .nav-pills-custom .nav-link {
+        color: #aaa;
+        background: #fff;
+        position: relative;
+    }
+    .nav-pills-custom .nav-link.active {
+        color: $color_blue;
+        background: #fff;
+    }
+    /* Add indicator arrow for the active tab */
+    @media (min-width: 992px) {
+        .nav-pills-custom .nav-link::before {
+            content: '';
+            display: block;
+            border-top: 8px solid transparent;
+            border-left: 10px solid #fff;
+            border-bottom: 8px solid transparent;
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+            opacity: 0;
+        }
+    }
+    .nav-pills-custom .nav-link.active::before {
+        opacity: 1;
+    }
+}
