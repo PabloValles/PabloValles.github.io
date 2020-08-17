@@ -1909,6 +1909,10 @@ section#turnos_especialidades .turnos_especialidades #turnos_especialidades__for
   /* Add indicator arrow for the active tab */
 }
 
+#departamentos .departamentos__titulo {
+  font-size: 1em !important;
+}
+
 @media (min-width: 1200px) {
   #departamentos {
     padding-left: 5%;

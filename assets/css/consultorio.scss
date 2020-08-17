@@ -1468,6 +1468,9 @@ section#turnos_especialidades {
 // Pagina 5
 // DEPARTAMENTOS PAGE
 #departamentos {
+    .departamentos__titulo {
+        font-size: 1em !important;
+    }
     @include xl-min {
         padding-left: 5%;
         padding-right: 5%;
