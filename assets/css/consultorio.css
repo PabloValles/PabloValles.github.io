@@ -125,7 +125,7 @@
   background: #3db5e7 !important;
 }
 
-main {
+.mxw-1920 {
   max-width: 1920px !important;
 }
 
@@ -611,6 +611,7 @@ section#about .aboutDescription__button {
 
 section#about .cardServices {
   position: relative;
+  justify-items: center;
 }
 
 @media (min-width: 992px) {

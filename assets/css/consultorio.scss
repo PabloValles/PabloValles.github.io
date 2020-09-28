@@ -3,7 +3,7 @@
 @import "../scss/colors";
 @import "../scss/variables";
 //=========================================================
-main {
+.mxw-1920 {
     max-width: 1920px !important;
 }
 
@@ -383,6 +383,7 @@ section#about {
     }
     .cardServices {
         position: relative;
+        justify-items: center;
         @include lg-min {
             height: 100%;
             display: grid !important;
