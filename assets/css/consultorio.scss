@@ -221,7 +221,7 @@ section#header {
         #img_docs {
             position: absolute;
             bottom: -150px;
-            right: -90px;
+            left: 55%;
             z-index: 1;
             img {
                 width: 550px;
@@ -234,7 +234,9 @@ section#header {
             @media (max-width: 767px) {
                 display: none;
             }
-            @include xl-min {}
+            @include xl-min {
+                left: 55%;
+            }
         }
         #circles {
             position: absolute;

@@ -405,7 +405,7 @@ section#header div#formas #shape_points img {
 section#header div#formas #img_docs {
   position: absolute;
   bottom: -150px;
-  right: -90px;
+  left: 55%;
   z-index: 1;
 }
 
@@ -424,6 +424,12 @@ section#header div#formas #img_docs img {
 @media (max-width: 767px) {
   section#header div#formas #img_docs {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  section#header div#formas #img_docs {
+    left: 55%;
   }
 }
 
